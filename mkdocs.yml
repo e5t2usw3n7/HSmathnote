@@ -1,0 +1,40 @@
+# site
+site_name: HS Math Notes
+
+# repo
+
+# content
+nav:
+  - 主页: index.md
+  - 圆锥曲线:
+    - "结论1：焦点三角形面积公式": "圆锥曲线/1.md"
+  - 导数:
+    - "待办": "导数/no.md"
+
+theme:
+  name: 'material'
+  logo: 'img/hat.png'
+  favicon: 'img/wenting.ico'
+  palette:
+    # 深浅色主题
+    scheme: 'default'
+    # 顶栏
+    primary: 'black'
+    # 强调色（交互）
+    accent: 'indigo'
+  features: 
+    - navigation.tabs
+    - navigation.tabs.sticky
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - 'css/img.css'
+plugins:
+  - search
