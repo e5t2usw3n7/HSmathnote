@@ -2,22 +2,29 @@
 site_name: HS Math Notes
 
 # repo
+repo_url: "https://github.com/e5t2usw3n7/HSmathnote"
 
 # content
 nav:
   - 主页: index.md
   - 圆锥曲线:
-    - "结论1：焦点三角形面积公式": "圆锥曲线/1.md"
-    - "结论2：“万能”公式": "圆锥曲线/2.md"
-    - "结论3：中点弦斜率关系": "圆锥曲线/3.md"
-    - "结论4：焦半径公式": "圆锥曲线/4.md"
-    - "结论5：内准圆": "圆锥曲线/5.md"
-    - "结论6：外准圆": "圆锥曲线/6.md"
-    - "结论7：极点与极线": "圆锥曲线/7.md"
-    - "结论8：双曲线上点到两渐近线距离之积": "圆锥曲线/8.md"
+    - 二级结论系列:
+      - "结论1：焦点三角形面积公式": "圆锥曲线/1.md"
+      - "结论2：“万能”公式": "圆锥曲线/2.md"
+      - "结论3：中点弦斜率关系": "圆锥曲线/3.md"
+      - "结论4：焦半径公式": "圆锥曲线/4.md"
+      - "结论5：内准圆": "圆锥曲线/5.md"
+      - "结论6：外准圆": "圆锥曲线/6.md"
+      - "结论7：极点与极线": "圆锥曲线/7.md"
+      - "结论8：双曲线上点到两渐近线距离之积": "圆锥曲线/8.md"
+      - "结论9：伴侣点": "圆锥曲线/9.md"
+    - 题型归纳系列:
+      - "待办": "导数/no.md"
 
   - 导数:
     - "待办": "导数/no.md"
+
+copyright: Copyright 2024 by e5t2usw3n7
 
 theme:
   name: 'material'
@@ -37,6 +44,7 @@ theme:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
+  - admonition
 
 extra_javascript:
   - javascripts/mathjax.js
