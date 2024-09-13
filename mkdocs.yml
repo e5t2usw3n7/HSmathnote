@@ -28,8 +28,8 @@ copyright: Copyright 2024 by e5t2usw3n7
 
 theme:
   name: 'material'
-  logo: 'img/hat.png'
-  favicon: 'img/wenting.ico'
+  logo: 'img/miao.jpeg'
+  favicon: 'img/miao.jpeg'
   palette:
     # 深浅色主题
     scheme: 'default'
@@ -44,7 +44,22 @@ theme:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
-  - admonition
+  - admonition # 注解
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
 
 extra_javascript:
   - javascripts/mathjax.js
