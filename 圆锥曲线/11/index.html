@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../9/">
+        <link rel="prev" href="../10/">
       
       
-        <link rel="next" href="../11/">
+        <link rel="next" href="../12/">
       
       
       <link rel="icon" href="../../img/miao.jpeg">
@@ -20,7 +20,7 @@
     
     
       
-        <title>结论10：共焦点问题 - HS Math Notes</title>
+        <title>结论11: “一定两动，对称直线” - HS Math Notes</title>
       
     
     
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              结论10：共焦点问题
+              结论11: “一定两动，对称直线”
             
           </span>
         </div>
@@ -589,6 +589,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    结论10：共焦点问题
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -605,7 +626,7 @@
           
   
   <span class="md-ellipsis">
-    结论10：共焦点问题
+    结论11: “一定两动，对称直线”
   </span>
   
 
@@ -616,7 +637,7 @@
         
   
   <span class="md-ellipsis">
-    结论10：共焦点问题
+    结论11: “一定两动，对称直线”
   </span>
   
 
@@ -677,27 +698,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../11/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    结论11: “一定两动，对称直线”
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -952,27 +952,96 @@
   
 
 
-<h1 id="_1">结论十：共焦点问题</h1>
+<h1 id="_1">结论十一：椭圆上定点关于两动点斜率对称性的定值问题</h1>
 <div class="admonition abstract">
 <p class="admonition-title">Abstract</p>
-<p>“椭圆和双曲线共焦点问题”实际上是死记硬背的填选题离心率结论问题，它巧妙地<strong>将椭圆和双曲线的离心率或交点坐标联系在一个式子里</strong>。</p>
-<p>这个结论本身的推导对双曲线和椭圆定义的考察很有价值，所以不仅要记住这结论，还要记住它的推导过程。</p>
+<p>实际上这是”齐次化“方法很经典的可证结论之一，也是一个偶尔出现大题的结论，它考察得很基础又很进阶。</p>
 </div>
 <h2 id="_2">一、结论描述</h2>
-<p>对于共焦点<span class="arithmatex">\( F_1 \)</span>、<span class="arithmatex">\( F_2 \)</span>的双曲线<span class="arithmatex">\( E:\frac{x^2}{m^2} - \frac{y^2}{n^2} = 1 \)</span>和椭圆<span class="arithmatex">\( C:\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 \space (a&gt;b&gt;0) \)</span>，设两曲线相交于<span class="arithmatex">\( P(x_P,y_P ) \)</span>，分别记二者的离心率为<span class="arithmatex">\( e_1 \)</span>、<span class="arithmatex">\( e_2 \)</span>，记<span class="arithmatex">\( \angle F_1 P F_2 = \theta \)</span>则有：</p>
+<p>设椭圆的标准方程为： </p>
+<ul>
+<li><strong>焦点在x轴</strong>：<span class="arithmatex">\(\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1\)</span>  </li>
+<li><strong>焦点在y轴</strong>：<span class="arithmatex">\(\dfrac{x^2}{b^2} + \dfrac{y^2}{a^2} = 1\)</span>  </li>
+</ul>
+<p><img alt="alt text" src="../img/11_1.png" /></p>
+<p>已知点<span class="arithmatex">\(P\)</span>为椭圆上的定点，动点<span class="arithmatex">\(E,F\)</span>在椭圆上且满足<span class="arithmatex">\(k_{PE} + k_{PF} = 0\)</span>（即<span class="arithmatex">\(PE\)</span>与<span class="arithmatex">\(PF\)</span>的斜率互为相反数），则：<br />
+1. <strong><span class="arithmatex">\(EF\)</span>的斜率<span class="arithmatex">\(k_{EF}\)</span>为定值</strong>；<br />
+2. <strong><span class="arithmatex">\(k_{EF} \cdot k_{PO} = \dfrac{b^2}{a^2}\)</span>（焦点在x轴）或<span class="arithmatex">\(\dfrac{a^2}{b^2}\)</span>（焦点在y轴）</strong>，其中<span class="arithmatex">\(O\)</span>为原点。</p>
+<h2 id="_3">二、结论证明</h2>
+<p>此处以焦点在x轴的情形为例。</p>
+<p><strong>椭圆方程</strong>：<span class="arithmatex">\(\dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1\)</span></p>
+<p><strong>平移坐标系</strong>：以定点$P(x_0, y_0)$为新原点，平移后新坐标为：</p>
 <div class="arithmatex">\[
-\frac{1-\cos \theta}{e_1^2} + \frac{1+\cos \theta}{e_2^2} = 2 \tag{1}
+x = x + x_0, \quad y = y + y_0
 \]</div>
+<p><strong>椭圆方程变换</strong>：代入原椭圆方程得：</p>
 <div class="arithmatex">\[
-|x_P| = \frac{a\cdot m}{c}, |y_P| = \frac{b\cdot n }{c} \tag{2}
+\frac{(x+x_0)^2}{a^2} + \frac{(y+y_0)^2}{b^2} = 1
 \]</div>
+<p>将方程(2)改写为<span class="arithmatex">\(1 = mx + ny\)</span>，代入方程(1)的<strong>一次项</strong>中实现齐次化：  </p>
+<div class="arithmatex">\[
+\frac{x^2}{a^2} + \frac{y^2}{b^2} + \left( \frac{2x_0}{a^2}x + \frac{2y_0}{b^2}y \right)(mx + ny) = 0
+\]</div>
+<p>展开后得<strong>齐次二次方程</strong>：  </p>
+<div class="arithmatex">\[
+\frac{x^2}{a^2} + \frac{y^2}{b^2} + \frac{2x_0 m}{a^2}x^2 + \frac{2x_0 n}{a^2}xy + \frac{2y_0 m}{b^2}xy + \frac{2y_0 n}{b^2}y^2 = 0
+\]</div>
+<p>整理合并同类项：  </p>
+<div class="arithmatex">\[
+\left( \frac{1}{a^2} + \frac{2x_0 m}{a^2} \right)x^2 + \left( \frac{2x_0 n}{a^2} + \frac{2y_0 m}{b^2} \right)xy + \left( \frac{1}{b^2} + \frac{2y_0 n}{b^2} \right)y^2 = 0 \quad \text{(3)}
+\]</div>
+<p>令斜率<span class="arithmatex">\(k = \dfrac{y}{x}\)</span>，将方程(3)两边除以<span class="arithmatex">\(x^2\)</span>得：  </p>
+<div class="arithmatex">\[
+\left( \frac{1}{a^2} + \frac{2x_0 m}{a^2} \right) + \left( \frac{2x_0 n}{a^2} + \frac{2y_0 m}{b^2} \right)k + \left( \frac{1}{b^2} + \frac{2y_0 n}{b^2} \right)k^2 = 0
+\]</div>
+<p>设<span class="arithmatex">\(E(x_1, y_1)\)</span>、<span class="arithmatex">\(F(x_2, y_2)\)</span>对应斜率<span class="arithmatex">\(k_1, k_2\)</span>，由<span class="arithmatex">\(k_{PE} + k_{PF} = 0\)</span>即<span class="arithmatex">\(k_1 + k_2 = 0\)</span>。根据韦达定理：  </p>
+<div class="arithmatex">\[
+k_1 + k_2 = -\frac{\frac{2x_0 n}{a^2} + \frac{2y_0 m}{b^2}}{\frac{1}{b^2} + \frac{2y_0 n}{b^2}} = 0
+\]</div>
+<p>解得：  </p>
+<div class="arithmatex">\[
+\frac{2x_0 n}{a^2} + \frac{2y_0 m}{b^2} = 0 \quad \Rightarrow \quad \frac{x_0 n}{a^2} = -\frac{y_0 m}{b^2} \quad \text{(4)}
+\]</div>
+<p>直线<span class="arithmatex">\(EF\)</span>的斜率<span class="arithmatex">\(k_{EF}\)</span>在平移后为<span class="arithmatex">\(k'_{EF} = -\dfrac{m}{n}\)</span>。由方程(4)：  </p>
+<div class="arithmatex">\[
+\frac{x_0}{a^2}n = -\frac{y_0}{b^2}m \quad \Rightarrow \quad \frac{m}{n} = -\frac{b^2 x_0}{a^2 y_0}
+\]</div>
+<p>故<span class="arithmatex">\(k'_{EF} = \dfrac{b^2 x_0}{a^2 y_0}\)</span>。还原到原坐标系，斜率不变，即：  </p>
+<div class="arithmatex">\[
+k_{EF} = \frac{b^2 x_0}{a^2 y_0}
+\]</div>
+<p>结合<span class="arithmatex">\(k_{PO} = \dfrac{y_0}{x_0}\)</span>，得：  </p>
+<div class="arithmatex">\[
+k_{EF} \cdot k_{PO} = \frac{b^2}{a^2}
+\]</div>
+<h2 id="_4">三、例题</h2>
+<p>椭圆<span class="arithmatex">\(C: \dfrac{x^2}{4} + y^2 = 1\)</span>，定点<span class="arithmatex">\(P(1, \dfrac{\sqrt{3}}{2})\)</span>，动点<span class="arithmatex">\(E,F\)</span>在椭圆上且<span class="arithmatex">\(k_{PE} + k_{PF} = 0\)</span>，求<span class="arithmatex">\(EF\)</span>的斜率为________。</p>
+<p><strong>解</strong>：<br />
+椭圆参数：<span class="arithmatex">\(a=2\)</span>, <span class="arithmatex">\(b=1\)</span>（焦点在x轴）<br />
+计算<span class="arithmatex">\(k_{PO}\)</span>：</p>
+<div class="arithmatex">\[
+   k_{PO} = \frac{\sqrt{3}/2}{1} = \frac{\sqrt{3}}{2}
+\]</div>
+<p>应用结论：</p>
+<div class="arithmatex">\[
+   k_{EF} \cdot \frac{\sqrt{3}}{2} = \frac{1^2}{2^2} = \frac{1}{4} \quad \Rightarrow \quad k_{EF} = \frac{1}{4} \div \frac{\sqrt{3}}{2} = \frac{\sqrt{3}}{6}
+\]</div>
+<p><strong>答案</strong>：<span class="arithmatex">\(k_{EF} = \boxed{\dfrac{\sqrt{3}}{6}}\)</span></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>这里<span class="arithmatex">\( P \)</span>点取左交点或者右交点（上交点或下交点）是无所谓的，只是个简单的对称关系，所以在<span class="arithmatex">\( (2) \)</span>式里加入了绝对值。</p>
+<p>大题请写明推导证明过程，否则几乎拿不到分数。</p>
 </div>
-<h2 id="_3">二、结论证明</h2>
-<h2 id="_4">三、例题</h2>
 <h2 id="_5">四、拓展结论</h2>
+<p><strong>逆命题</strong>：若<span class="arithmatex">\(EF\)</span>斜率为定值且满足<span class="arithmatex">\(k_{EF} \cdot k_{PO} = \dfrac{b^2}{a^2}\)</span>，则存在<span class="arithmatex">\(E,F\)</span>使得<span class="arithmatex">\(k_{PE} + k_{PF} = 0\)</span>。<br />
+<strong>双曲线类比</strong>：对双曲线<span class="arithmatex">\(\dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1\)</span>，类似条件可得：</p>
+<div class="arithmatex">\[
+   k_{EF} \cdot k_{PO} = -\dfrac{b^2}{a^2}或-\dfrac{a^2}{b^2}
+\]</div>
+<p><strong>抛物线类比</strong>：  </p>
+<ul>
+<li>焦点在x轴上的抛物线：<span class="arithmatex">\(y^2 = 2px\)</span>，定点<span class="arithmatex">\(P(x_0, y_0)\)</span>在抛物线上，若<span class="arithmatex">\(k_{PE} + k_{PF} = 0\)</span>，则<span class="arithmatex">\(k_{EF} \cdot y_0 = -p\)</span>；  </li>
+<li>焦点在y轴上的抛物线：<span class="arithmatex">\(x^2 = 2py\)</span>，定点<span class="arithmatex">\(P(x_0, y_0)\)</span>在抛物线上，若<span class="arithmatex">\(k_{PE} + k_{PF} = 0\)</span>，则<span class="arithmatex">\(\dfrac{x_0}{k_{EF}} = -p\)</span>。</li>
+</ul>
 
 
 
