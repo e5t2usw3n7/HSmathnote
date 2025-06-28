@@ -1,0 +1,4 @@
+/* 居中所有 mermaid 图表 */
+div.mermaid {
+  text-align: center;
+}
