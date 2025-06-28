@@ -1,188 +1,122 @@
 
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-      
-      
-      
-        <link rel="prev" href="../3/">
-      
-      
-        <link rel="next" href="../5/">
-      
-      
-      <link rel="icon" href="../../img/miao.jpeg">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.34">
-    
-    
-      
-        <title>结论4：焦半径公式 - HS Math Notes</title>
-      
-    
-    
-      <link rel="stylesheet" href="../../assets/stylesheets/main.35f28582.min.css">
-      
-        
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
-      
-      
+<!DOCTYPE html>
 
-
-    
-    
-      
-    
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-      <link rel="stylesheet" href="../../css/img.css">
-    
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-
-    
-    
-    
-  </head>
-  
-  
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
-  
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#_1" class="md-skip">
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../3/" rel="prev"/>
+<link href="../5/" rel="next"/>
+<link href="../../img/miao.jpeg" rel="icon"/>
+<meta content="mkdocs-1.6.0, mkdocs-material-9.5.34" name="generator"/>
+<title>结论4：焦半径公式 - HS Math Notes</title>
+<link href="../../assets/stylesheets/main.35f28582.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=JetBrains+Mono,+LXGW+WenKai+Mono+GB+Screen:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"JetBrains Mono, LXGW WenKai Mono GB Screen";--md-code-font:"JetBrains Mono"}</style>
+<link href="../../style/css/img.css" rel="stylesheet"/>
+<link href="../../style/css/code.css" rel="stylesheet"/>
+<link href="../../style/css/table.css" rel="stylesheet"/>
+<link href="../../style/css/fonts.css" rel="stylesheet"/>
+<link href="../../style/css/mermaid.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="black" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#结论四焦半径公式">
           Skip to content
         </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-    
-      
-
-  
-
+</div>
+<div data-md-component="announce">
+</div>
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="HS Math Notes" class="md-header__button md-logo" aria-label="HS Math Notes" data-md-component="logo">
-      
-  <img src="../../img/miao.jpeg" alt="logo">
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="HS Math Notes" class="md-header__button md-logo" data-md-component="logo" href="../.." title="HS Math Notes">
+<img alt="logo" src="../../img/miao.jpeg"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
             HS Math Notes
           </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
             
               结论4：焦半径公式
             
           </span>
-        </div>
-      </div>
-    </div>
-    
-      
-    
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="black" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="black" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<a aria-label="Share" class="md-search__icon md-icon" data-clipboard="" data-clipboard-text="" data-md-component="search-share" href="javascript:void(0)" tabindex="-1" title="Share">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
+</a>
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+<ol class="md-search-result__list" role="presentation"></ol>
 </div>
-    
-    
-      <div class="md-header__source">
-        <a href="https://github.com/e5t2usw3n7/HSmathnote" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
-  </div>
-  <div class="md-source__repository">
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/e5t2usw3n7/HSmathnote" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
     GitHub
   </div>
 </a>
-      </div>
-    
-  </nav>
-  
-    
-      
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
         
   
     
@@ -190,1037 +124,518 @@
   主页
 
       </a>
-    </li>
-  
-
-      
-        
-  
-  
-    
-  
-  
-    
-    
-      
-  
-  
-    
-  
-  
-    
-    
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../1/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../1/">
           
+  
+    
   
   圆锥曲线
 
         </a>
-      </li>
-    
-  
-
-    
-  
-
-      
-        
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../%E5%AF%BC%E6%95%B0/no/" class="md-tabs__link">
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../%E5%AF%BC%E6%95%B0/no/">
           
+  
+    
   
   导数
 
         </a>
-      </li>
-    
-  
-
-      
-    </ul>
-  </div>
+</li>
+</ul>
+</div>
 </nav>
-    
-  
 </header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-  
-
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="HS Math Notes" class="md-nav__button md-logo" aria-label="HS Math Notes" data-md-component="logo">
-      
-  <img src="../../img/miao.jpeg" alt="logo">
-
-    </a>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="HS Math Notes" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="HS Math Notes">
+<img alt="logo" src="../../img/miao.jpeg"/>
+</a>
     HS Math Notes
   </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/e5t2usw3n7/HSmathnote" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
-  </div>
-  <div class="md-source__repository">
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/e5t2usw3n7/HSmathnote" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
     GitHub
   </div>
 </a>
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
     主页
   </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-      
-        
-        
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<span class="md-ellipsis">
     圆锥曲线
   </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
             圆锥曲线
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+<span class="md-ellipsis">
     二级结论系列
   </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_1">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_1">
+<span class="md-nav__icon md-icon"></span>
             二级结论系列
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../1/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../1/">
+<span class="md-ellipsis">
     结论1：焦点三角形面积公式
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../2/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2/">
+<span class="md-ellipsis">
     结论2：“万能”公式
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../3/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../3/">
+<span class="md-ellipsis">
     结论3：中点弦斜率关系
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
     结论4：焦半径公式
   </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
     结论4：焦半径公式
   </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
+</a>
+<nav aria-label="index" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      index
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#一结论描述">
+<span class="md-ellipsis">
       一、结论描述
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="一、结论描述">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="一、结论描述" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1椭圆">
+<span class="md-ellipsis">
       1.椭圆
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1.椭圆">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="1.椭圆" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#11-倾斜角式">
+<span class="md-ellipsis">
       1.1 倾斜角式
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#12" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#12-坐标式">
+<span class="md-ellipsis">
       1.2 坐标式
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2双曲线">
+<span class="md-ellipsis">
       2.双曲线
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2.双曲线">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="2.双曲线" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#21-倾斜角式">
+<span class="md-ellipsis">
       2.1 倾斜角式
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#22" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#22-坐标式">
+<span class="md-ellipsis">
       2.2 坐标式
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3抛物线">
+<span class="md-ellipsis">
       3.抛物线
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3.抛物线">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#31" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="3.抛物线" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#31-倾斜角式">
+<span class="md-ellipsis">
       3.1 倾斜角式
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#32" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#32-坐标式">
+<span class="md-ellipsis">
       3.2 坐标式
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#二结论证明">
+<span class="md-ellipsis">
       二、结论证明
     </span>
-  </a>
-  
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#三例题">
+<span class="md-ellipsis">
       三、例题
     </span>
-  </a>
-  
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#四拓展结论">
+<span class="md-ellipsis">
       四、拓展结论
     </span>
-  </a>
-  
+</a>
 </li>
-      
-    </ul>
-  
+</ul>
 </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../5/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../5/">
+<span class="md-ellipsis">
     结论5：内准圆
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../6/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../6/">
+<span class="md-ellipsis">
     结论6：外准圆
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../7/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../7/">
+<span class="md-ellipsis">
     结论7：极点与极线
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../8/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../8/">
+<span class="md-ellipsis">
     结论8：双曲线上点到两渐近线距离之积
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../9/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../9/">
+<span class="md-ellipsis">
     结论9：伴侣点
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../10/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../10/">
+<span class="md-ellipsis">
     结论10：共焦点问题
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../11/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../11/">
+<span class="md-ellipsis">
     结论11: “一定两动，对称直线”
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../12/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../12/">
+<span class="md-ellipsis">
     结论12: “一定两动，垂直直线”
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../13/">
+<span class="md-ellipsis">
+    结论13: 抛物线过焦点直线的坐标关系
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../%E5%AF%BC%E6%95%B0/no/">
+<span class="md-ellipsis">
     题型归纳系列
   </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_2">
-            <span class="md-nav__icon md-icon"></span>
-            题型归纳系列
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../%E5%AF%BC%E6%95%B0/no/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    待办
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
-  
-  <span class="md-ellipsis">
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../%E5%AF%BC%E6%95%B0/no/">
+<span class="md-ellipsis">
     导数
   </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            导数
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../%E5%AF%BC%E6%95%B0/no/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    待办
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-  </ul>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="index" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      index
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#一结论描述">
+<span class="md-ellipsis">
       一、结论描述
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="一、结论描述">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="一、结论描述" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1椭圆">
+<span class="md-ellipsis">
       1.椭圆
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1.椭圆">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="1.椭圆" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#11-倾斜角式">
+<span class="md-ellipsis">
       1.1 倾斜角式
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#12" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#12-坐标式">
+<span class="md-ellipsis">
       1.2 坐标式
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2双曲线">
+<span class="md-ellipsis">
       2.双曲线
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2.双曲线">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="2.双曲线" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#21-倾斜角式">
+<span class="md-ellipsis">
       2.1 倾斜角式
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#22" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#22-坐标式">
+<span class="md-ellipsis">
       2.2 坐标式
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3抛物线">
+<span class="md-ellipsis">
       3.抛物线
     </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3.抛物线">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#31" class="md-nav__link">
-    <span class="md-ellipsis">
+</a>
+<nav aria-label="3.抛物线" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#31-倾斜角式">
+<span class="md-ellipsis">
       3.1 倾斜角式
     </span>
-  </a>
-  
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#32" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#32-坐标式">
+<span class="md-ellipsis">
       3.2 坐标式
     </span>
-  </a>
-  
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-        
-      </ul>
-    </nav>
-  
+</ul>
+</nav>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#二结论证明">
+<span class="md-ellipsis">
       二、结论证明
     </span>
-  </a>
-  
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#三例题">
+<span class="md-ellipsis">
       三、例题
     </span>
-  </a>
-  
+</a>
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#四拓展结论">
+<span class="md-ellipsis">
       四、拓展结论
     </span>
-  </a>
-  
+</a>
 </li>
-      
-    </ul>
-  
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-  
-  
-
-
-<h1 id="_1">结论四：焦半径公式</h1>
-<div class="admonition abstract">
-<p class="admonition-title">Abstract</p>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/e5t2usw3n7/HSmathnote/edit/master/docs/圆锥曲线/4.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+</a>
+<a class="md-content__button md-icon" href="https://github.com/e5t2usw3n7/HSmathnote/raw/master/docs/圆锥曲线/4.md" title="View source of this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"></path></svg>
+</a>
+<h1 id="结论四焦半径公式">结论四：焦半径公式<a class="headerlink" href="#结论四焦半径公式" title="Permanent link">⚓︎</a></h1>
+<details class="abstract">
+<summary>Abstract</summary>
 <p>焦半径公式是快速计算焦点弦和焦半径长度的二级结论，在双曲线、椭圆和抛物线中有类似的形式进行表示，一般情况下我们只需记住最基本的焦半径公式就能更快地得到焦点弦和焦半径长度。</p>
 <p>可以说掌握了这套公式，就是拿下了很多中档题乃至难题。</p>
-</div>
-<h2 id="_2">一、结论描述</h2>
+</details>
+<h2 id="一结论描述">一、结论描述<a class="headerlink" href="#一结论描述" title="Permanent link">⚓︎</a></h2>
 <div class="arithmatex">\[
 焦半径长度公式\left\{\begin{matrix}
 坐标式 &amp; \\
 倾斜角式
 \end{matrix}\right.
 \]</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<details class="note">
+<summary>Note</summary>
 <p>焦半径指的是<strong>圆锥曲线上一点与其焦点所连的线段</strong>。</p>
-</div>
-<h3 id="1">1.椭圆</h3>
-<h4 id="11">1.1 倾斜角式</h4>
+</details>
+<h3 id="1椭圆">1.椭圆<a class="headerlink" href="#1椭圆" title="Permanent link">⚓︎</a></h3>
+<h4 id="11-倾斜角式">1.1 倾斜角式<a class="headerlink" href="#11-倾斜角式" title="Permanent link">⚓︎</a></h4>
 <p>如图，在椭圆<span class="arithmatex">\(\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 (a&gt;b&gt;0)\)</span>中，过<strong>右</strong>焦点<span class="arithmatex">\(F_2\)</span>作倾斜角为<span class="arithmatex">\(\theta \)</span>的直线交椭圆于<span class="arithmatex">\(A\)</span>和<span class="arithmatex">\(B\)</span>，则<span class="arithmatex">\(AF_2 = \frac{b^2}{a+c\cos \theta } \)</span>，<span class="arithmatex">\(BF_2 = \frac{b^2}{a-c\cos \theta } \)</span> 。</p>
-<p><img alt="4_1" src="../img/4_1.png" /></p>
+<p><img alt="4_1" src="../img/4_1.png"/></p>
 <p>如图，在椭圆<span class="arithmatex">\(\frac{x^2}{b^2} + \frac{y^2}{a^2} = 1 (a&gt;b&gt;0)\)</span>中，过<strong>下</strong>焦点<span class="arithmatex">\(F_2\)</span>作倾斜角为<span class="arithmatex">\(\theta \)</span>的直线交椭圆于<span class="arithmatex">\(A\)</span>和<span class="arithmatex">\(B\)</span>，则<span class="arithmatex">\(AF_2 = \frac{b^2}{a+c\sin \theta } \)</span>，<span class="arithmatex">\(BF_2 = \frac{b^2}{a-c\sin \theta } \)</span> 。</p>
-<p><img alt="4_2" src="../img/4_2.png" /></p>
+<p><img alt="4_2" src="../img/4_2.png"/></p>
 <p><span class="arithmatex">\(F_1\)</span>的焦半径长度情况应由对称性质轻易得到。</p>
-<h4 id="12">1.2 坐标式</h4>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
+<h4 id="12-坐标式">1.2 坐标式<a class="headerlink" href="#12-坐标式" title="Permanent link">⚓︎</a></h4>
+<details class="tip">
+<summary>Tip</summary>
 <p>记忆方法1：脑海里想想谁更长/短，然后把这俩值里面大/小的带进去。</p>
 <p>记忆方法2：左加右减，上减下加，这和我们的平移规律是一样的。</p>
-</div>
+</details>
 <p>如图，在椭圆<span class="arithmatex">\(\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 (a&gt;b&gt;0)\)</span>中，<span class="arithmatex">\(P(x_0,y_0) \)</span>为椭圆上一点，<span class="arithmatex">\(F_1 \)</span>和<span class="arithmatex">\(F_2 \)</span>分别为左、右焦点，则<span class="arithmatex">\(PF_1 =  a+ex_0\)</span>，<span class="arithmatex">\(PF_2 = a-ex_0 \)</span>，其中<span class="arithmatex">\(e\)</span>为离心率。</p>
-<p><img alt="4_3" src="../img/4_3.png" /></p>
+<p><img alt="4_3" src="../img/4_3.png"/></p>
 <p>如图，在椭圆<span class="arithmatex">\(\frac{x^2}{b^2} + \frac{y^2}{a^2} = 1 (a&gt;b&gt;0)\)</span>中，<span class="arithmatex">\(P(x_0,y_0) \)</span>为椭圆上一点，<span class="arithmatex">\(F_1 \)</span>和<span class="arithmatex">\(F_2 \)</span>分别为上、下焦点，则<span class="arithmatex">\(PF_1 =  a-ey_0\)</span>，<span class="arithmatex">\(PF_2 = a+ey_0 \)</span>，其中<span class="arithmatex">\(e\)</span>为离心率。</p>
-<p><img alt="4_4" src="../img/4_4.png" /></p>
-<h3 id="2">2.双曲线</h3>
-<h4 id="21">2.1 倾斜角式</h4>
+<p><img alt="4_4" src="../img/4_4.png"/></p>
+<h3 id="2双曲线">2.双曲线<a class="headerlink" href="#2双曲线" title="Permanent link">⚓︎</a></h3>
+<h4 id="21-倾斜角式">2.1 倾斜角式<a class="headerlink" href="#21-倾斜角式" title="Permanent link">⚓︎</a></h4>
 <p>如图，在双曲线<span class="arithmatex">\(\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1\)</span>中，过<strong>右</strong>焦点<span class="arithmatex">\(F_2\)</span>作倾斜角为<span class="arithmatex">\(\theta \)</span>的直线交椭圆于<span class="arithmatex">\(A\)</span>和<span class="arithmatex">\(B\)</span>，则<span class="arithmatex">\(AF_2 = \frac{b^2}{|a-c\cos \theta| } \)</span>，<span class="arithmatex">\(BF_2 = \frac{b^2}{a+c\cos \theta } \)</span> 。</p>
-<p><img alt="4_5" src="../img/4_5.png" /></p>
+<p><img alt="4_5" src="../img/4_5.png"/></p>
 <p>如图，在双曲线<span class="arithmatex">\(\frac{y^2}{a^2} - \frac{x^2}{b^2} = 1\)</span>中，过<strong>下</strong>焦点<span class="arithmatex">\(F_2\)</span>作倾斜角为<span class="arithmatex">\(\theta \)</span>的直线交椭圆于<span class="arithmatex">\(A\)</span>和<span class="arithmatex">\(B\)</span>，则<span class="arithmatex">\(AF_2 = \frac{b^2}{|a-c\sin \theta| } \)</span>，<span class="arithmatex">\(BF_2 = \frac{b^2}{a+c\sin \theta } \)</span> 。</p>
-<p><img alt="4_6" src="../img/4_6.png" /></p>
+<p><img alt="4_6" src="../img/4_6.png"/></p>
 <p><span class="arithmatex">\(F_1\)</span>的焦半径长度情况应由对称性质轻易得到。</p>
-<h4 id="22">2.2 坐标式</h4>
+<h4 id="22-坐标式">2.2 坐标式<a class="headerlink" href="#22-坐标式" title="Permanent link">⚓︎</a></h4>
 <p>如图，在双曲线<span class="arithmatex">\(\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1 \)</span>中，<span class="arithmatex">\(P(x_0,y_0) \)</span>为双曲线上一点，<span class="arithmatex">\(F_1 \)</span>和<span class="arithmatex">\(F_2 \)</span>分别为左、右焦点，则<span class="arithmatex">\(PF_1 =  |a+ex_0|\)</span>，<span class="arithmatex">\(PF_2 = |a-ex_0| \)</span>，其中<span class="arithmatex">\(e\)</span>为离心率。</p>
-<p><img alt="4_7" src="../img/4_7.png" /></p>
+<p><img alt="4_7" src="../img/4_7.png"/></p>
 <p>如图，在双曲线<span class="arithmatex">\(\frac{y^2}{a^2} - \frac{x^2}{b^2} = 1 \)</span>中，<span class="arithmatex">\(P(x_0,y_0) \)</span>为双曲线上一点，<span class="arithmatex">\(F_1 \)</span>和<span class="arithmatex">\(F_2 \)</span>分别为上、下焦点，则<span class="arithmatex">\(PF_1 =  |a-ey_0|\)</span>，<span class="arithmatex">\(PF_2 = |a+ey_0| \)</span>，其中<span class="arithmatex">\(e\)</span>为离心率。</p>
-<p><img alt="4_8" src="../img/4_8.png" /></p>
-<h3 id="3">3.抛物线</h3>
-<h4 id="31">3.1 倾斜角式</h4>
+<p><img alt="4_8" src="../img/4_8.png"/></p>
+<h3 id="3抛物线">3.抛物线<a class="headerlink" href="#3抛物线" title="Permanent link">⚓︎</a></h3>
+<h4 id="31-倾斜角式">3.1 倾斜角式<a class="headerlink" href="#31-倾斜角式" title="Permanent link">⚓︎</a></h4>
 <p>如图，在抛物线<span class="arithmatex">\(y^2 = 2px (p&gt;0)\)</span>中，过焦点<span class="arithmatex">\(F \)</span>作倾斜角为<span class="arithmatex">\(\theta \)</span>的直线分别与抛物线上、下相交于<span class="arithmatex">\(A \)</span>和<span class="arithmatex">\(B \)</span>两点，则<span class="arithmatex">\(AF = \frac{p}{1-\cos \theta } \)</span>，<span class="arithmatex">\(BF = \frac{p}{1+\cos \theta} \)</span>；在抛物线<span class="arithmatex">\(y^2 = -2px (p&gt;0)\)</span>中，过焦点<span class="arithmatex">\(F \)</span>作倾斜角为<span class="arithmatex">\(\theta \)</span>的直线分别与抛物线上、下相交于<span class="arithmatex">\(A \)</span>和<span class="arithmatex">\(B \)</span>两点，则<span class="arithmatex">\(AF = \frac{p}{1+\cos \theta } \)</span>，<span class="arithmatex">\(BF = \frac{p}{1-\cos \theta} \)</span>。</p>
-<p><img alt="4_9" src="../img/4_9.png" /></p>
+<p><img alt="4_9" src="../img/4_9.png"/></p>
 <p>如图，在抛物线<span class="arithmatex">\(x^2 = 2py (p&gt;0)\)</span>中，过焦点<span class="arithmatex">\(F \)</span>作倾斜角为<span class="arithmatex">\(\theta \)</span>的直线分别与抛物线上、下相交于<span class="arithmatex">\(A \)</span>和<span class="arithmatex">\(B \)</span>两点，则<span class="arithmatex">\(AF = \frac{p}{1-\sin \theta } \)</span>，<span class="arithmatex">\(BF = \frac{p}{1+\sin \theta} \)</span>；在抛物线<span class="arithmatex">\(y^2 = -2px (p&gt;0)\)</span>中，过焦点<span class="arithmatex">\(F \)</span>作倾斜角为<span class="arithmatex">\(\theta \)</span>的直线分别与抛物线上、下相交于<span class="arithmatex">\(A \)</span>和<span class="arithmatex">\(B \)</span>两点，则<span class="arithmatex">\(AF = \frac{p}{1+\sin \theta } \)</span>，<span class="arithmatex">\(BF = \frac{p}{1-\sin \theta} \)</span>。</p>
-<p><img alt="4_10" src="../img/4_10.png" /></p>
-<h4 id="32">3.2 坐标式</h4>
+<p><img alt="4_10" src="../img/4_10.png"/></p>
+<h4 id="32-坐标式">3.2 坐标式<a class="headerlink" href="#32-坐标式" title="Permanent link">⚓︎</a></h4>
 <p><span class="arithmatex">\(A\)</span>为抛物线上一点，其焦半径为<span class="arithmatex">\(AF \)</span>，长度关系如下：</p>
 <p>焦点在x轴上时，<span class="arithmatex">\(AF = \frac{p}{2} + |x_A|\)</span></p>
 <p>焦点在y轴上时，<span class="arithmatex">\(AF = \frac{p}{2} + |y_A|\)</span></p>
-<h2 id="_3">二、结论证明</h2>
+<h2 id="二结论证明">二、结论证明<a class="headerlink" href="#二结论证明" title="Permanent link">⚓︎</a></h2>
 <p>这里就以<strong>焦点在x轴上的椭圆的倾斜角式和坐标式</strong>为例。</p>
-<p><img alt="4_11" src="../img/4_11.png" /></p>
+<p><img alt="4_11" src="../img/4_11.png"/></p>
 <p><strong>下证倾斜角式</strong>。</p>
 <p>由几何关系：</p>
 <div class="arithmatex">\[
@@ -1260,83 +675,85 @@
 |AF_2| = a - ex_A    
 \]</div>
 <p>其他情况类似，尤其是抛物线，实际上就是定义延伸出来的情况。</p>
-<h2 id="_4">三、例题</h2>
+<h2 id="三例题">三、例题<a class="headerlink" href="#三例题" title="Permanent link">⚓︎</a></h2>
 <p>(2017·全国I卷)已知<span class="arithmatex">\(F\)</span>为抛物线<span class="arithmatex">\(C: y^2 = 4x \)</span>的焦点,过<span class="arithmatex">\( F \)</span>作两条互相垂直的直线<span class="arithmatex">\(l_1\)</span>,<span class="arithmatex">\(l_2\)</span>, 直线<span class="arithmatex">\( l_1 \)</span>与<span class="arithmatex">\( C \)</span>交于<span class="arithmatex">\( A\)</span>、<span class="arithmatex">\(B \)</span>两点,直线<span class="arithmatex">\( l_2 \)</span>与<span class="arithmatex">\( C \)</span>交于 D、E 两点,则<span class="arithmatex">\(|AB|\)</span>+<span class="arithmatex">\(|DE|\)</span>的最小值为<span class="arithmatex">\(\_\_\_\_\_\_ \)</span>。</p>
 <p>(2019·全国I卷)已知椭圆C的焦点<span class="arithmatex">\( F_{1} (-1,0) \)</span>，<span class="arithmatex">\( F_{2} (1,0) \)</span>，过<span class="arithmatex">\( F_{2} \)</span>的直线与C交于A，B两点。若<span class="arithmatex">\( |AF_{2}| = 2|F_{2}B| \)</span>，<span class="arithmatex">\( |AB| = |BF_{1}| \)</span>，则C的方程为<span class="arithmatex">\( \_\_\_\_\_\_\)</span> 。</p>
-<h2 id="_5">四、拓展结论</h2>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
+<h2 id="四拓展结论">四、拓展结论<a class="headerlink" href="#四拓展结论" title="Permanent link">⚓︎</a></h2>
+<details class="tip">
+<summary>Tip</summary>
 <p>以下结论（部分请自行推导）均源自以上公式，记性不好的话记住上面的够用了，考试临场用上面已知的能够推出下面的就行。</p>
-</div>
+</details>
 <p><strong>结论1：焦点弦长度公式：</strong> 在上面各种圆锥曲线的倾斜角式的例图中，<span class="arithmatex">\(|AB| = \_\_\_\_\_\_ \)</span></p>
 <p><strong>结论2：焦半径的长度倒数和：</strong> 在上面各种圆锥曲线的倾斜角式的例图中，<span class="arithmatex">\(\frac{1}{|AF|} + \frac{1}{|BF|} = \_\_\_\_\_\_ \)</span></p>
 <p><strong>结论3：互相垂直的两条焦点弦的长度倒数和：</strong> <span class="arithmatex">\(AB\)</span>和<span class="arithmatex">\(CD\)</span>为互相垂直的两条焦点弦，在椭圆和抛物线中，满足：<span class="arithmatex">\(\frac{1}{|AB|} + \frac{1}{|CD|} = |\frac{2-e^2}{2ep} |\)</span>；在双曲线中，左图满足<span class="arithmatex">\(\frac{1}{|AB|} + \frac{1}{|CD|} = |\frac{2-e^2}{2ep} |\)</span>，右图满足<span class="arithmatex">\(-\frac{1}{|AB|} + \frac{1}{|CD|} = |\frac{2-e^2}{2ep} |\)</span>，其中<strong>p称为焦准距</strong>，满足<span class="arithmatex">\(p=\frac{b^2}{c} \)</span>。</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
+<details class="note">
+<summary>Note</summary>
 <p><strong>焦点到准线的距离</strong>称为焦准距。</p>
 <p>这里你不妨试试用a、b和c表示一下焦准距，看看是不是满足<span class="arithmatex">\(p=\frac{b^2}{c} \)</span>。</p>
-</div>
-<p><img alt="4_12" src="../img/4_12.png" /></p>
+</details>
+<p><img alt="4_12" src="../img/4_12.png"/></p>
 <p><strong>结论4：焦点弦长度的最小值：</strong> <span class="arithmatex">\(|AB|_{min} = min \{\frac{2b^2}{a},2a \} \)</span></p>
-
-
-
-
-
-
-
-
-
-
-
-
-                
-              </article>
-            </div>
-          
-          
+</article>
+</div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
-        </div>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-    <div class="md-copyright__highlight">
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: 结论3：中点弦斜率关系" class="md-footer__link md-footer__link--prev" href="../3/">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                结论3：中点弦斜率关系
+              </div>
+</div>
+</a>
+<a aria-label="Next: 结论5：内准圆" class="md-footer__link md-footer__link--next" href="../5/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Next
+              </span>
+<div class="md-ellipsis">
+                结论5：内准圆
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
       Copyright 2024 by e5t2usw3n7
     </div>
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
       Material for MkDocs
     </a>
-  
 </div>
-      
-    </div>
-  </div>
+</div>
+</div>
 </footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-    
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-    
-    
-      <script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
-      
-        <script src="../../javascripts/mathjax.js"></script>
-      
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
-      
-    
-  </body>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.action.view", "content.code.copy", "content.code.annotate", "content.footnote.tooltips", "header.autohide", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.footer", "navigation.indexes", "navigation.tracking", "navigation.prune", "search.share"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+<script src="../../style/javascripts/mathjax.js"></script>
+<script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
 </html>

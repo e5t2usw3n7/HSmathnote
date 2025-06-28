@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@455;550;600;680;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@455;500;550;600;680;700&display=swap');
+
+/* 全局字体设置 */
+:root > * {
+  --md-text-font-family: "LXGW WenKai Mono GB Screen", "Roboto Slab", "Noto Sans SC"; 
+  --md-heading-font-family: "LXGW WenKai Mono GB Screen", "Roboto Slab", "Noto Sans SC";
+}
+
+.md-typeset h2 {
+    font-weight: 550!important;
+}
+
+.md-typeset h5 {
+    color:black;
+}
+
+/* 修改段落的粗度 */
+.md-typeset p {
+  font-family: "LXGW WenKai Mono GB Screen", "Noto Sans SC", "Roboto Slab";
+  font-weight: 455!important;
+}
+
+/* 修改加粗的粗度 */
+.md-typeset p strong {
+  font-weight: 680 !important; 
+}
+
+/*修改暗主题下的加粗字体的可见颜色*/
+[data-md-color-scheme="slate"] .md-typeset p strong {
+  color: rgb(227, 234, 241) !important;
+}

@@ -1,0 +1,958 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="../12/" rel="prev"/>
+<link href="../../%E5%AF%BC%E6%95%B0/no/" rel="next"/>
+<link href="../../img/miao.jpeg" rel="icon"/>
+<meta content="mkdocs-1.6.0, mkdocs-material-9.5.34" name="generator"/>
+<title>结论13: 抛物线过焦点直线的坐标关系 - HS Math Notes</title>
+<link href="../../assets/stylesheets/main.35f28582.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=JetBrains+Mono,+LXGW+WenKai+Mono+GB+Screen:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"JetBrains Mono, LXGW WenKai Mono GB Screen";--md-code-font:"JetBrains Mono"}</style>
+<link href="../../style/css/img.css" rel="stylesheet"/>
+<link href="../../style/css/code.css" rel="stylesheet"/>
+<link href="../../style/css/table.css" rel="stylesheet"/>
+<link href="../../style/css/fonts.css" rel="stylesheet"/>
+<link href="../../style/css/mermaid.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="black" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#结论十三过焦点直线的坐标关系结论">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="HS Math Notes" class="md-header__button md-logo" data-md-component="logo" href="../.." title="HS Math Notes">
+<img alt="logo" src="../../img/miao.jpeg"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            HS Math Notes
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              结论13: 抛物线过焦点直线的坐标关系
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="black" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="black" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<a aria-label="Share" class="md-search__icon md-icon" data-clipboard="" data-clipboard-text="" data-md-component="search-share" href="javascript:void(0)" tabindex="-1" title="Share">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"></path></svg>
+</a>
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/e5t2usw3n7/HSmathnote" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+        
+  
+    
+  
+  主页
+
+      </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../1/">
+          
+  
+    
+  
+  圆锥曲线
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../%E5%AF%BC%E6%95%B0/no/">
+          
+  
+    
+  
+  导数
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="HS Math Notes" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="HS Math Notes">
+<img alt="logo" src="../../img/miao.jpeg"/>
+</a>
+    HS Math Notes
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/e5t2usw3n7/HSmathnote" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+<span class="md-ellipsis">
+    主页
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<span class="md-ellipsis">
+    圆锥曲线
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            圆锥曲线
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+<span class="md-ellipsis">
+    二级结论系列
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_1">
+<span class="md-nav__icon md-icon"></span>
+            二级结论系列
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../1/">
+<span class="md-ellipsis">
+    结论1：焦点三角形面积公式
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2/">
+<span class="md-ellipsis">
+    结论2：“万能”公式
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../3/">
+<span class="md-ellipsis">
+    结论3：中点弦斜率关系
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../4/">
+<span class="md-ellipsis">
+    结论4：焦半径公式
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../5/">
+<span class="md-ellipsis">
+    结论5：内准圆
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../6/">
+<span class="md-ellipsis">
+    结论6：外准圆
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../7/">
+<span class="md-ellipsis">
+    结论7：极点与极线
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../8/">
+<span class="md-ellipsis">
+    结论8：双曲线上点到两渐近线距离之积
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../9/">
+<span class="md-ellipsis">
+    结论9：伴侣点
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../10/">
+<span class="md-ellipsis">
+    结论10：共焦点问题
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../11/">
+<span class="md-ellipsis">
+    结论11: “一定两动，对称直线”
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../12/">
+<span class="md-ellipsis">
+    结论12: “一定两动，垂直直线”
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    结论13: 抛物线过焦点直线的坐标关系
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    结论13: 抛物线过焦点直线的坐标关系
+  </span>
+</a>
+<nav aria-label="index" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      index
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#一结论描述">
+<span class="md-ellipsis">
+      一、结论描述
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#二结论证明">
+<span class="md-ellipsis">
+      二、结论证明
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#三例题">
+<span class="md-ellipsis">
+      三、例题
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#四拓展结论">
+<span class="md-ellipsis">
+      四、拓展结论
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../%E5%AF%BC%E6%95%B0/no/">
+<span class="md-ellipsis">
+    题型归纳系列
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+<a class="md-nav__link" href="../../%E5%AF%BC%E6%95%B0/no/">
+<span class="md-ellipsis">
+    导数
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="index" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      index
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#一结论描述">
+<span class="md-ellipsis">
+      一、结论描述
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#二结论证明">
+<span class="md-ellipsis">
+      二、结论证明
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#三例题">
+<span class="md-ellipsis">
+      三、例题
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#四拓展结论">
+<span class="md-ellipsis">
+      四、拓展结论
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<a class="md-content__button md-icon" href="https://github.com/e5t2usw3n7/HSmathnote/edit/master/docs/圆锥曲线/13.md" title="Edit this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
+</a>
+<a class="md-content__button md-icon" href="https://github.com/e5t2usw3n7/HSmathnote/raw/master/docs/圆锥曲线/13.md" title="View source of this page">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"></path></svg>
+</a>
+<h1 id="结论十三过焦点直线的坐标关系结论">结论十三：过焦点直线的坐标关系结论<a class="headerlink" href="#结论十三过焦点直线的坐标关系结论" title="Permanent link">⚓︎</a></h1>
+<details class="abstract">
+<summary>Abstract</summary>
+<p>这一结论会经常使用，它简化了<strong>过焦点直线</strong>与<strong>圆锥曲线焦点横/纵坐标</strong>的计算，在许多填选题中，发挥着提速的效果。</p>
+</details>
+<h2 id="一结论描述">一、结论描述<a class="headerlink" href="#一结论描述" title="Permanent link">⚓︎</a></h2>
+<p>设直线 <span class="arithmatex">\( AB \)</span> 过抛物线的焦点，与曲线交于点 <span class="arithmatex">\( A(x_A, y_A) \)</span> 和 <span class="arithmatex">\( B(x_B, y_B) \)</span> ，则交点的横坐标和纵坐标满足以下关系：</p>
+<ul>
+<li>
+<p><strong>焦点在X轴上</strong>（标准方程 <span class="arithmatex">\( y^2 = 2px \)</span> ）：</p>
+<ul>
+<li><span class="arithmatex">\( x_A \cdot x_B = \frac{p^2}{4} \)</span></li>
+<li><span class="arithmatex">\( y_A \cdot y_B = -p^2 \)</span></li>
+</ul>
+</li>
+<li>
+<p><strong>焦点在Y轴上</strong>（标准方程 <span class="arithmatex">\( x^2 = 2py \)</span> ）：</p>
+<ul>
+<li><span class="arithmatex">\( y_A \cdot y_B = \frac{p^2}{4} \)</span></li>
+<li><span class="arithmatex">\( x_A \cdot x_B = -p^2 \)</span></li>
+</ul>
+</li>
+</ul>
+<h2 id="二结论证明">二、结论证明<a class="headerlink" href="#二结论证明" title="Permanent link">⚓︎</a></h2>
+<p>下方证明焦点在X轴上的情况：</p>
+<p>考虑抛物线 <span class="arithmatex">\( y^2 = 2px \)</span>，其焦点为 <span class="arithmatex">\( F\left( \frac{p}{2}, 0 \right) \)</span>。</p>
+<p>设过焦点的直线 <span class="arithmatex">\( l \)</span> 的方程为 <span class="arithmatex">\( y = k\left( x - \frac{p}{2} \right) \)</span>，与抛物线交于 <span class="arithmatex">\( A(x_1, y_1) \)</span> 和 <span class="arithmatex">\( B(x_2, y_2) \)</span>。</p>
+<p>将直线方程代入抛物线方程：</p>
+<div class="arithmatex">\[
+\left[ k\left( x - \frac{p}{2} \right) \right]^2 = 2px
+\]</div>
+<p>化简得：</p>
+<div class="arithmatex">\[
+k^2 \left( x^2 - px + \frac{p^2}{4} \right) = 2px
+\]</div>
+<p>整理为标准二次方程：</p>
+<div class="arithmatex">\[
+k^2 x^2 - (k^2 p + 2p) x + \frac{k^2 p^2}{4} = 0
+\]</div>
+<p>根据韦达定理，交点的横坐标满足：</p>
+<div class="arithmatex">\[
+x_1 + x_2 = \frac{k^2 p + 2p}{k^2} = p + \frac{2p}{k^2}
+\]</div>
+<div class="arithmatex">\[
+x_1 x_2 = \frac{\frac{k^2 p^2}{4}}{k^2} = \frac{p^2}{4}
+\]</div>
+<p>对于纵坐标，<span class="arithmatex">\( y_1 = k\left( x_1 - \frac{p}{2} \right) \)</span>，<span class="arithmatex">\( y_2 = k\left( x_2 - \frac{p}{2} \right) \)</span>，则：</p>
+<div class="arithmatex">\[
+y_1 y_2 = k^2 \left( x_1 - \frac{p}{2} \right) \left( x_2 - \frac{p}{2} \right)
+\]</div>
+<p>展开：</p>
+<div class="arithmatex">\[
+y_1 y_2 = k^2 \left( x_1 x_2 - \frac{p}{2} (x_1 + x_2) + \frac{p^2}{4} \right)
+\]</div>
+<p>代入 <span class="arithmatex">\( x_1 x_2 = \frac{p^2}{4} \)</span> 和 <span class="arithmatex">\( x_1 + x_2 = p + \frac{2p}{k^2} \)</span>：</p>
+<div class="arithmatex">\[
+y_1 y_2 = k^2 \left( \frac{p^2}{4} - \frac{p}{2} \left( p + \frac{2p}{k^2} \right) + \frac{p^2}{4} \right)
+\]</div>
+<div class="arithmatex">\[
+= k^2 \left( \frac{p^2}{4} - \frac{p^2}{2} - \frac{p^2}{k^2} + \frac{p^2}{4} \right) = k^2 \left( -\frac{p^2}{k^2} \right) = -p^2
+\]</div>
+<p>因此：</p>
+<ul>
+<li><span class="arithmatex">\( x_A \cdot x_B = \frac{p^2}{4} \)</span></li>
+<li><span class="arithmatex">\( y_A \cdot y_B = -p^2 \)</span></li>
+</ul>
+<p>对于焦点在Y轴上的抛物线 <span class="arithmatex">\( x^2 = 2py \)</span>，通过类似推导可得对称结果。</p>
+<h2 id="三例题">三、例题<a class="headerlink" href="#三例题" title="Permanent link">⚓︎</a></h2>
+<p>随便写了两道题，可以试试这个结论来观察解题速度的提升。</p>
+<details class="example">
+<summary>例题1</summary>
+<p>已知抛物线 <span class="arithmatex">\( y^2 = 8x \)</span>，过焦点 <span class="arithmatex">\( F \)</span> 的直线与抛物线交于 <span class="arithmatex">\( A \)</span> 和 <span class="arithmatex">\( B \)</span>，求 <span class="arithmatex">\( x_A x_B \)</span> 和 <span class="arithmatex">\( y_A y_B \)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>抛物线 <span class="arithmatex">\( y^2 = 8x \)</span>，则 <span class="arithmatex">\( 2p = 8 \)</span>，<span class="arithmatex">\( p = 4 \)</span>。</p>
+<p>根据结论：</p>
+<div class="arithmatex">\[
+x_A x_B = \frac{p^2}{4} = \frac{16}{4} = 4
+\]</div>
+<div class="arithmatex">\[
+y_A y_B = -p^2 = -16
+\]</div>
+</details>
+<details class="example">
+<summary>例题2</summary>
+<p>已知抛物线 <span class="arithmatex">\( x^2 = 4y \)</span>，过焦点 <span class="arithmatex">\( F \)</span> 的直线与抛物线交于 <span class="arithmatex">\( A \)</span> 和 <span class="arithmatex">\( B \)</span>，求 <span class="arithmatex">\( y_A y_B \)</span> 和 <span class="arithmatex">\( x_A x_B \)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>抛物线 <span class="arithmatex">\( x^2 = 4y \)</span>，则 <span class="arithmatex">\( 2p = 4 \)</span>，<span class="arithmatex">\( p = 2 \)</span>。</p>
+<p>根据结论：</p>
+<div class="arithmatex">\[
+y_A y_B = \frac{p^2}{4} = \frac{4}{4} = 1
+\]</div>
+<div class="arithmatex">\[
+x_A x_B = -p^2 = -4
+\]</div>
+</details>
+<h2 id="四拓展结论">四、拓展结论<a class="headerlink" href="#四拓展结论" title="Permanent link">⚓︎</a></h2>
+<p>这几条衍生出来的二级结论也相当重要，在很多题中会助你窥得先机。</p>
+<ol>
+<li>
+<p>设 <span class="arithmatex">\( l \)</span> 为抛物线的准线，<span class="arithmatex">\( AB \)</span> 为过焦点 <span class="arithmatex">\( F \)</span> 的直线，与抛物线交于 <span class="arithmatex">\( A \)</span> 和 <span class="arithmatex">\( B \)</span> 两点。过点 <span class="arithmatex">\( A \)</span> 和 <span class="arithmatex">\( B \)</span> 分别作垂直于准线 <span class="arithmatex">\( l \)</span> 的直线 <span class="arithmatex">\( AM \perp l \)</span>，<span class="arithmatex">\( BN \perp l \)</span>，垂足分别为 <span class="arithmatex">\( M \)</span> 和 <span class="arithmatex">\( N \)</span>。则有：</p>
+<ul>
+<li>点 <span class="arithmatex">\( A \)</span>、<span class="arithmatex">\( O \)</span>、<span class="arithmatex">\( N \)</span> 共线；</li>
+<li>点 <span class="arithmatex">\( M \)</span>、<span class="arithmatex">\( O \)</span>、<span class="arithmatex">\( B \)</span> 共线。</li>
+</ul>
+<details class="note">
+<summary>证明过程</summary>
+<p>这里以开口向右的抛物线为例子。</p>
+<p><img alt="1" src="../img/13_1.png"/></p>
+<p>下面证明点 <span class="arithmatex">\( A, O, N \)</span> 共线。</p>
+<p>要证明点 <span class="arithmatex">\( A(x_A, y_A) \)</span>、<span class="arithmatex">\( O(0, 0) \)</span>、<span class="arithmatex">\( N\left( -\frac{p}{2}, y_B \right) \)</span> 共线，我们可以通过比较斜率来验证。（你当然可以用向量法）</p>
+<ul>
+<li>
+<p>直线 <span class="arithmatex">\( AO \)</span> 的斜率：</p>
+<div class="arithmatex">\[
+k_{AO} = \frac{y_A - 0}{x_A - 0} = \frac{y_A}{x_A}
+\]</div>
+</li>
+<li>
+<p>直线 <span class="arithmatex">\( ON \)</span> 的斜率：</p>
+<div class="arithmatex">\[
+k_{ON} = \frac{y_B - 0}{-\frac{p}{2} - 0} = \frac{y_B}{-\frac{p}{2}} = -\frac{2 y_B}{p}
+\]</div>
+</li>
+</ul>
+<p>若 <span class="arithmatex">\( A, O, N \)</span> 共线，则两斜率相等，所以我们要证：</p>
+<div class="arithmatex">\[
+\frac{y_A}{x_A} = -\frac{2 y_B}{p}
+\]</div>
+<p>即证：</p>
+<div class="arithmatex">\[
+y_A = -\frac{2 y_B x_A}{p} \tag{1}
+\]</div>
+<p>根据之前的结论：</p>
+<div class="arithmatex">\[
+x_A x_B = \frac{p^2}{4}, \quad y_A y_B = -p^2 \tag{2}
+\]</div>
+<p>将 <span class="arithmatex">\( 2px = y^2 \)</span> 代入<span class="arithmatex">\((1)\)</span>，即证：</p>
+<div class="arithmatex">\[
+1 = -\frac{y_A y_B}{p^2} \tag{3}
+\]</div>
+<p>即证：</p>
+<div class="arithmatex">\[
+y_Ay_B = -p^2    
+\]</div>
+<p>由<span class="arithmatex">\((2)\)</span>可得，显然成立</p>
+<p>下面继续证明点 <span class="arithmatex">\( M, O, B \)</span> 共线。</p>
+<p>我们容易知道，点 <span class="arithmatex">\( M\left( -\frac{p}{2}, y_A \right) \)</span>、<span class="arithmatex">\( O(0, 0) \)</span>、<span class="arithmatex">\( B(x_B, y_B) \)</span> 。</p>
+<ul>
+<li>
+<p>直线 <span class="arithmatex">\( MO \)</span> 的斜率：</p>
+<div class="arithmatex">\[
+k_{MO} = \frac{y_A - 0}{-\frac{p}{2} - 0} = -\frac{2 y_A}{p}
+\]</div>
+</li>
+<li>
+<p>直线 <span class="arithmatex">\( OB \)</span> 的斜率：</p>
+<div class="arithmatex">\[
+k_{OB} = \frac{y_B - 0}{x_B - 0} = \frac{y_B}{x_B}
+\]</div>
+</li>
+</ul>
+<p>若 <span class="arithmatex">\( M, O, B \)</span> 共线，则斜率相等：</p>
+<div class="arithmatex">\[
+-\frac{2 y_A}{p} = \frac{y_B}{x_B}
+\]</div>
+<p>将抛物线方程 <span class="arithmatex">\( x_B = \frac{y_B^2}{2p} \)</span> 带入：</p>
+<div class="arithmatex">\[
+-\frac{2 y_A}{p} = \frac{2p}{y_B}    
+\]</div>
+<p>化简后，即证：</p>
+<div class="arithmatex">\[
+y_A \cdot y_B = -p^2
+\]</div>
+<p>显然正确</p>
+</details>
+</li>
+<li>
+<p>斜率关系：</p>
+<div class="arithmatex">\[
+k_{OA} \cdot k_{OB} = k_{OM} \cdot k_{ON} =
+\begin{cases}
+-4, &amp; \text{焦点在 } x \text{轴上} \\
+-\frac{1}{4}, &amp; \text{焦点在 } y \text{轴上}
+\end{cases}
+\]</div>
+<details class="note">
+<summary>证明过程</summary>
+<p>在<a href="http://127.0.0.1:8000/%E5%9C%86%E9%94%A5%E6%9B%B2%E7%BA%BF/13/#%E5%9B%9B%E6%8B%93%E5%B1%95%E7%BB%93%E8%AE%BA">上一条拓展结论</a>的证明中，其实我们已经有了这些斜率的“雏形”，接下来计算即可。</p>
+<p>下面证明焦点在 <span class="arithmatex">\( y \)</span> 轴上的情况。</p>
+<ul>
+<li>
+<p>直线 <span class="arithmatex">\( OA \)</span> 的斜率：</p>
+<div class="arithmatex">\[
+k_{OA} = \frac{y_A - 0}{x_A - 0} = \frac{y_A}{x_A}
+\]</div>
+</li>
+<li>
+<p>直线 <span class="arithmatex">\( OB \)</span> 的斜率：</p>
+<div class="arithmatex">\[
+k_{OB} = \frac{y_B}{x_B}
+\]</div>
+</li>
+<li>
+<p>直线 <span class="arithmatex">\( OM \)</span> 的斜率（从 <span class="arithmatex">\( O(0, 0) \)</span> 到 <span class="arithmatex">\( M(x_A, -\frac{p}{2}) \)</span>）：</p>
+<div class="arithmatex">\[
+k_{OM} = \frac{-\frac{p}{2} - 0}{x_A - 0} = -\frac{p}{2 x_A}
+\]</div>
+</li>
+<li>
+<p>直线 <span class="arithmatex">\( ON \)</span> 的斜率（从 <span class="arithmatex">\( O(0, 0) \)</span> 到 <span class="arithmatex">\( N(x_B, -\frac{p}{2}) \)</span>）：</p>
+<div class="arithmatex">\[
+k_{ON} = -\frac{p}{2 x_B}
+\]</div>
+</li>
+</ul>
+<p>验证 <span class="arithmatex">\( k_{OA} \cdot k_{OB} \)</span> ：</p>
+<div class="arithmatex">\[
+k_{OA} \cdot k_{OB} = \frac{y_A}{x_A} \cdot \frac{y_B}{x_B} = \frac{y_A y_B}{x_A x_B}
+\]</div>
+<p>代入已知条件：</p>
+<div class="arithmatex">\[
+y_A y_B = \frac{p^2}{4}, \quad x_A x_B = -p^2
+\]</div>
+<div class="arithmatex">\[
+k_{OA} \cdot k_{OB} = \frac{\frac{p^2}{4}}{-p^2} = \frac{p^2}{4} \cdot \frac{1}{-p^2} = -\frac{1}{4}
+\]</div>
+<p>验证 <span class="arithmatex">\( k_{OM} \cdot k_{ON} \)</span> ：</p>
+<div class="arithmatex">\[
+k_{OM} \cdot k_{ON} = \left( -\frac{p}{2 x_A} \right) \cdot \left( -\frac{p}{2 x_B} \right) = \frac{p^2}{4 x_A x_B}
+\]</div>
+<p>代入 <span class="arithmatex">\( x_A x_B = -p^2 \)</span>:</p>
+<div class="arithmatex">\[
+k_{OM} \cdot k_{ON} = \frac{p^2}{4 (-p^2)} = -\frac{1}{4}
+\]</div>
+<p>因此：</p>
+<div class="arithmatex">\[
+k_{OA} \cdot k_{OB} = k_{OM} \cdot k_{ON} = -\frac{1}{4}
+\]</div>
+<p>x轴情况同理。</p>
+</details>
+</li>
+<li>
+<p>向量内积：</p>
+<div class="arithmatex">\[
+\vec{OA} \cdot \vec{OB} = \vec{OM} \cdot \vec{ON} = -\frac{3}{4}p^2 \quad (\text{对于任意抛物线})
+\]</div>
+<details class="note">
+<summary>证明过程</summary>
+<p>这里我们假定焦点在x轴上吧。</p>
+<ul>
+<li>
+<p>向量 <span class="arithmatex">\( \vec{OA} \)</span>（从原点 <span class="arithmatex">\( O(0, 0) \)</span> 到 <span class="arithmatex">\( A(x_A, y_A) \)</span>）：</p>
+<div class="arithmatex">\[
+\vec{OA} = (x_A, y_A)
+\]</div>
+</li>
+<li>
+<p>向量 <span class="arithmatex">\( \vec{OB} \)</span>（从 <span class="arithmatex">\( O(0, 0) \)</span> 到 <span class="arithmatex">\( B(x_B, y_B) \)</span>）：</p>
+<div class="arithmatex">\[
+\vec{OB} = (x_B, y_B)
+\]</div>
+</li>
+<li>
+<p>向量 <span class="arithmatex">\( \vec{OM} \)</span>（从 <span class="arithmatex">\( O(0, 0) \)</span> 到 <span class="arithmatex">\( M\left( -\frac{p}{2}, y_A \right) \)</span>）：</p>
+<div class="arithmatex">\[
+\vec{OM} = \left( -\frac{p}{2}, y_A \right)
+\]</div>
+</li>
+<li>
+<p>向量 <span class="arithmatex">\( \vec{ON} \)</span>（从 <span class="arithmatex">\( O(0, 0) \)</span> 到 <span class="arithmatex">\( N\left( -\frac{p}{2}, y_B \right) \)</span>）：</p>
+<div class="arithmatex">\[
+\vec{ON} = \left( -\frac{p}{2}, y_B \right)
+\]</div>
+</li>
+</ul>
+<p>计算点积 <span class="arithmatex">\( \vec{OA} \cdot \vec{OB} \)</span> ：</p>
+<div class="arithmatex">\[
+\vec{OA} \cdot \vec{OB} = x_A x_B + y_A y_B
+\]</div>
+<p>代入结论十三：</p>
+<div class="arithmatex">\[
+x_A x_B = \frac{p^2}{4}, \quad y_A y_B = -p^2
+\]</div>
+<div class="arithmatex">\[
+\vec{OA} \cdot \vec{OB} = \frac{p^2}{4} + (-p^2) = \frac{p^2}{4} - p^2 = -\frac{3}{4}p^2
+\]</div>
+<p>计算点积 <span class="arithmatex">\( \vec{OM} \cdot \vec{ON} \)</span> ：</p>
+<div class="arithmatex">\[
+\vec{OM} \cdot \vec{ON} = \left( -\frac{p}{2} \right) \cdot \left( -\frac{p}{2} \right) + y_A y_B
+\]</div>
+<div class="arithmatex">\[
+= \frac{p^2}{4} + y_A y_B
+\]</div>
+<p>代入 <span class="arithmatex">\( y_A y_B = -p^2 \)</span>:</p>
+<div class="arithmatex">\[
+\vec{OM} \cdot \vec{ON} = \frac{p^2}{4} - p^2 = -\frac{3}{4}p^2
+\]</div>
+<p>所以得证：</p>
+<div class="arithmatex">\[
+\vec{OA} \cdot \vec{OB} = -\frac{3}{4}p^2
+\]</div>
+<div class="arithmatex">\[
+\vec{OM} \cdot \vec{ON} = -\frac{3}{4}p^2
+\]</div>
+</details>
+</li>
+<li>
+<p>面积关系：</p>
+<div class="arithmatex">\[
+S_{\triangle AOB} = S_{\triangle MON} =
+\begin{cases}
+\frac{p^2}{2 \sin \theta}, &amp; \text{焦点在 } x \text{轴上} \\
+\frac{p^2}{2 \cos \theta}, &amp; \text{焦点在 } y \text{轴上}
+\end{cases}
+\]</div>
+<details class="note">
+<summary>证明过程</summary>
+<p>其中，<span class="arithmatex">\(\theta\)</span>为直线 <span class="arithmatex">\( AB \)</span> 与坐标轴的夹角。</p>
+<p><img alt="2" src="../img/13_2.png"/></p>
+<p>这里以焦点在 <span class="arithmatex">\( x \)</span> 轴上的情况为例。</p>
+<p>首先，下面这个式子是显然的。</p>
+<div class="arithmatex">\[
+S_{\Delta AOB} = S_{\Delta MON} \tag{1}
+\]</div>
+<p>对于左侧：</p>
+<div class="arithmatex">\[
+S_{\Delta AOB} = \frac{1}{2} |OS| |y_1 - y_2|
+\]</div>
+<p>对于右侧：</p>
+<div class="arithmatex">\[
+S_{\Delta MON} = \frac{1}{2} |OF| |y_1 - y_2|
+\]</div>
+<p>而<span class="arithmatex">\(|OS|=|OF|=\frac{p}{2}\)</span>是显然的，所以<span class="arithmatex">\((1)\)</span>是显然的。</p>
+<p>接下来证明其中一个面积公式就好了。</p>
+<div class="arithmatex">\[
+|y_1 - y_2| = \sqrt{(y_1 + y_2)^2 - 4y_1 y_2} 
+\]</div>
+<p>由此可以得到：</p>
+<div class="arithmatex">\[
+S_{\Delta AOB} = \frac{1}{2} \cdot \frac{p}{2} \cdot \sqrt{(y_A + y_B)^2 - 4y_A y_B}
+\]</div>
+<p>通过由结论十三简单的计算，我们可以得到：</p>
+<div class="arithmatex">\[ (y_A + y_B)^2 - 4y_A y_B = 4p^2 (\frac{1}{k})^2 + 4p^2 \]</div>
+<p>故有：</p>
+<div class="arithmatex">\[
+S_{\Delta AOB} = \frac{p^2}{2} \sqrt{\frac{1}{k^2} + 1} \tag{2}
+\]</div>
+<p>又有<span class="arithmatex">\(\sqrt{\frac{1}{k^2} + 1} = \frac{1}{\sin \theta} \)</span>（几何关系易证明），所以结论得证。</p>
+</details>
+</li>
+<li>
+<p>设 <span class="arithmatex">\( P \)</span> 为线段 <span class="arithmatex">\( MN \)</span> 的中点，则有：</p>
+<ul>
+<li><span class="arithmatex">\( AP \perp BP \)</span></li>
+<li><span class="arithmatex">\( PF \perp AB \)</span></li>
+<li><span class="arithmatex">\( MF \perp NF \)</span></li>
+</ul>
+<details class="note">
+<summary>证明过程</summary>
+<p>1.证明 <span class="arithmatex">\( AP \perp BP \)</span> ：</p>
+<p>要证明 <span class="arithmatex">\( AP \perp BP \)</span>，需验证直线 <span class="arithmatex">\( AP \)</span> 和 <span class="arithmatex">\( BP \)</span> 的斜率乘积为 <span class="arithmatex">\(-1\)</span>.</p>
+<ul>
+<li><strong>直线 <span class="arithmatex">\( AP \)</span> 的斜率</strong>（从 <span class="arithmatex">\( A(x_A, y_A) \)</span> 到 <span class="arithmatex">\( P\left( -\frac{p}{2}, \frac{y_A + y_B}{2} \right) \)</span>）：</li>
+</ul>
+<div class="arithmatex">\[
+k_{AP} = \frac{\frac{y_A + y_B}{2} - y_A}{-\frac{p}{2} - x_A} = \frac{\frac{y_A + y_B - 2y_A}{2}}{-\frac{p}{2} - x_A} = \frac{\frac{y_B - y_A}{2}}{-\left( \frac{p}{2} + x_A \right)} = \frac{y_A - y_B}{2 \left( \frac{p}{2} + x_A \right)}
+\]</div>
+<ul>
+<li><strong>直线 <span class="arithmatex">\( BP \)</span> 的斜率</strong>（从 <span class="arithmatex">\( B(x_B, y_B) \)</span> 到 <span class="arithmatex">\( P\left( -\frac{p}{2}, \frac{y_A + y_B}{2} \right) \)</span>）：</li>
+</ul>
+<div class="arithmatex">\[
+k_{BP} = \frac{\frac{y_A + y_B}{2} - y_B}{-\frac{p}{2} - x_B} = \frac{\frac{y_A + y_B - 2y_B}{2}}{-\left( \frac{p}{2} + x_B \right)} = \frac{\frac{y_A - y_B}{2}}{-\left( \frac{p}{2} + x_B \right)} = \frac{y_B - y_A}{2 \left( \frac{p}{2} + x_B \right)}
+\]</div>
+<p>计算斜率乘积：</p>
+<div class="arithmatex">\[
+k_{AP} \cdot k_{BP} = \frac{y_A - y_B}{2 \left( \frac{p}{2} + x_A \right)} \cdot \frac{y_B - y_A}{2 \left( \frac{p}{2} + x_B \right)} = \frac{(y_A - y_B)(y_B - y_A)}{4 \left( \frac{p}{2} + x_A \right)\left( \frac{p}{2} + x_B \right)}
+\]</div>
+<div class="arithmatex">\[
+= -\frac{(y_A - y_B)^2}{4 \left( \frac{p}{2} + x_A \right)\left( \frac{p}{2} + x_B \right)}
+\]</div>
+<p>计算 <span class="arithmatex">\( (y_A - y_B)^2 \)</span>:</p>
+<div class="arithmatex">\[
+(y_A - y_B)^2 = y_A^2 - 2 y_A y_B + y_B^2 = 2p x_A + 2p^2 + 2p x_B = 2p (x_A + x_B + p)
+\]</div>
+<p>代入直线 <span class="arithmatex">\( AB \)</span> 的方程 <span class="arithmatex">\( y = k \left( x - \frac{p}{2} \right) \)</span>，交点满足：</p>
+<div class="arithmatex">\[
+\left[ k \left( x - \frac{p}{2} \right) \right]^2 = 2px
+\]</div>
+<p>整理为二次方程：</p>
+<div class="arithmatex">\[
+k^2 x^2 - (k^2 p + 2p) x + \frac{k^2 p^2}{4} = 0
+\]</div>
+<p>根据韦达定理：</p>
+<div class="arithmatex">\[
+x_A + x_B = \frac{k^2 p + 2p}{k^2} = p \left( 1 + \frac{2}{k^2} \right)
+\]</div>
+<div class="arithmatex">\[
+x_A x_B = \frac{\frac{k^2 p^2}{4}}{k^2} = \frac{p^2}{4}
+\]</div>
+<div class="arithmatex">\[
+y_A = k \left( x_A - \frac{p}{2} \right), \quad y_B = k \left( x_B - \frac{p}{2} \right)
+\]</div>
+<p>计算分母：</p>
+<div class="arithmatex">\[
+\left( \frac{p}{2} + x_A \right)\left( \frac{p}{2} + x_B \right) = \frac{p^2}{4} + \frac{p}{2} (x_A + x_B) + x_A x_B
+\]</div>
+<div class="arithmatex">\[
+= \frac{p^2}{4} + \frac{p}{2} \cdot p \left( 1 + \frac{2}{k^2} \right) + \frac{p^2}{4} = \frac{p^2}{2} + \frac{p^2}{2} \left( 1 + \frac{2}{k^2} \right) = p^2 \left( 1 + \frac{1}{k^2} \right)
+\]</div>
+<p>代回斜率乘积：</p>
+<div class="arithmatex">\[
+k_{AP} \cdot k_{BP} = -\frac{2p (x_A + x_B + p)}{4 p^2 \left( 1 + \frac{1}{k^2} \right)} = -\frac{2p \cdot p \left( 1 + \frac{2}{k^2} + 1 \right)}{4 p^2 \left( 1 + \frac{1}{k^2} \right)}
+\]</div>
+<div class="arithmatex">\[
+= -\frac{2p^2 \left( 2 + \frac{2}{k^2} \right)}{4 p^2 \left( 1 + \frac{1}{k^2} \right)} = -\frac{2 + \frac{2}{k^2}}{2 \left( 1 + \frac{1}{k^2} \right)} = -1
+\]</div>
+<p>因此，<span class="arithmatex">\( k_{AP} \cdot k_{BP} = -1 \)</span>，证明 <span class="arithmatex">\( AP \perp BP \)</span>.</p>
+<p>2.证明 <span class="arithmatex">\( PF \perp AB \)</span> ：</p>
+<p>直线 <span class="arithmatex">\( AB \)</span> 的斜率为 <span class="arithmatex">\( k \)</span>。焦点 <span class="arithmatex">\( F\left( \frac{p}{2}, 0 \right) \)</span>，点 <span class="arithmatex">\( P\left( -\frac{p}{2}, \frac{y_A + y_B}{2} \right) \)</span>。计算直线 <span class="arithmatex">\( PF \)</span> 的斜率：</p>
+<div class="arithmatex">\[
+k_{PF} = \frac{\frac{y_A + y_B}{2} - 0}{-\frac{p}{2} - \frac{p}{2}} = \frac{y_A + y_B}{2 \cdot (-p)} = -\frac{y_A + y_B}{2p}
+\]</div>
+<p>直线 <span class="arithmatex">\( AB \)</span> 的斜率为 <span class="arithmatex">\( k \)</span>。若 <span class="arithmatex">\( PF \perp AB \)</span>，则：</p>
+<div class="arithmatex">\[
+k_{PF} \cdot k = -\frac{y_A + y_B}{2p} \cdot k = -1
+\]</div>
+<div class="arithmatex">\[
+y_A + y_B = -\frac{2p}{k}
+\]</div>
+<p>验证此关系：</p>
+<div class="arithmatex">\[
+y_A = k \left( x_A - \frac{p}{2} \right), \quad y_B = k \left( x_B - \frac{p}{2} \right)
+\]</div>
+<div class="arithmatex">\[
+y_A + y_B = k \left( x_A - \frac{p}{2} + x_B - \frac{p}{2} \right) = k (x_A + x_B - p)
+\]</div>
+<div class="arithmatex">\[
+= k \cdot p \left( 1 + \frac{2}{k^2} - 1 \right) = k \cdot p \cdot \frac{2}{k^2} = \frac{2p}{k}
+\]</div>
+<div class="arithmatex">\[
+-\frac{y_A + y_B}{2p} \cdot k = -\frac{\frac{2p}{k}}{2p} \cdot k = -1
+\]</div>
+<p>因此，<span class="arithmatex">\( k_{PF} \cdot k = -1 \)</span>，证明 <span class="arithmatex">\( PF \perp AB \)</span>.</p>
+<p>3.证明 <span class="arithmatex">\( MF \perp NF \)</span> ：</p>
+<p>焦点 <span class="arithmatex">\( F\left( \frac{p}{2}, 0 \right) \)</span>，点 <span class="arithmatex">\( M\left( -\frac{p}{2}, y_A \right) \)</span>，点 <span class="arithmatex">\( N\left( -\frac{p}{2}, y_B \right) \)</span>。计算直线 <span class="arithmatex">\( MF \)</span> 和 <span class="arithmatex">\( NF \)</span> 的斜率：</p>
+<ul>
+<li><strong>直线 <span class="arithmatex">\( MF \)</span> 的斜率</strong>：</li>
+</ul>
+<div class="arithmatex">\[
+k_{MF} = \frac{0 - y_A}{\frac{p}{2} - \left(-\frac{p}{2}\right)} = \frac{-y_A}{p}
+\]</div>
+<ul>
+<li><strong>直线 <span class="arithmatex">\( NF \)</span> 的斜率</strong>：</li>
+</ul>
+<div class="arithmatex">\[
+k_{NF} = \frac{0 - y_B}{\frac{p}{2} - \left(-\frac{p}{2}\right)} = \frac{-y_B}{p}
+\]</div>
+<p>计算斜率乘积：</p>
+<div class="arithmatex">\[
+k_{MF} \cdot k_{NF} = \frac{-y_A}{p} \cdot \frac{-y_B}{p} = \frac{y_A y_B}{p^2}
+\]</div>
+<p>代入 <span class="arithmatex">\( y_A y_B = -p^2 \)</span>:</p>
+<div class="arithmatex">\[
+k_{MF} \cdot k_{NF} = \frac{-p^2}{p^2} = -1
+\]</div>
+<p>因此，<span class="arithmatex">\( k_{MF} \cdot k_{NF} = -1 \)</span>，成功证明了 <span class="arithmatex">\( MF \perp NF \)</span></p>
+</details>
+<div class="admonition tip">
+<p class="admonition-title">其它的证明方式</p>
+<p><del>基于我的经验</del> ，我认为第五个结论用向量的方式完成更快。</p>
+</div>
+</li>
+</ol>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Previous: 结论12: “一定两动，垂直直线”" class="md-footer__link md-footer__link--prev" href="../12/">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Previous
+              </span>
+<div class="md-ellipsis">
+                结论12: “一定两动，垂直直线”
+              </div>
+</div>
+</a>
+<a aria-label="Next: 待办" class="md-footer__link md-footer__link--next" href="../../%E5%AF%BC%E6%95%B0/no/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                Next
+              </span>
+<div class="md-ellipsis">
+                待办
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright 2024 by e5t2usw3n7
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "content.action.view", "content.code.copy", "content.code.annotate", "content.footnote.tooltips", "header.autohide", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.footer", "navigation.indexes", "navigation.tracking", "navigation.prune", "search.share"], "search": "../../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.56dfad97.min.js"></script>
+<script src="../../style/javascripts/mathjax.js"></script>
+<script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>
