@@ -21,6 +21,7 @@ nav:
       - "结论10：共焦点问题": "圆锥曲线/10.md"
       - "结论11: “一定两动，对称直线”": "圆锥曲线/11.md"
       - "结论12: “一定两动，垂直直线”": "圆锥曲线/12.md"
+      - "结论13: 抛物线过焦点直线的坐标关系": "圆锥曲线/13.md"
     - 题型归纳系列:
       - "待办": "导数/no.md"
 
@@ -33,18 +34,44 @@ theme:
   name: 'material'
   logo: 'img/miao.jpeg'
   favicon: 'img/miao.jpeg'
-  palette:
-    # 深浅色主题
-    scheme: 'default'
-    # 顶栏
-    primary: 'black'
-    # 强调色（交互）
-    accent: 'indigo'
+  palette:     #切换昼夜模式的颜色
+    - media: "(prefers-color-scheme: light)" 
+      scheme: 'default'  #浅色模式
+      # 顶栏
+      primary: 'black'
+      # 强调色（交互）
+      accent: 'indigo'  #强调色
+      toggle:
+        icon: material/weather-sunny #图标，太阳
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"  
+      scheme: 'slate'  #深色模式
+      primary: 'black'
+      toggle:
+        icon: material/weather-night #图标，月亮
+        name: Switch to light mode
+  font:
+    text: JetBrains Mono, LXGW WenKai Mono GB Screen 
+    code: JetBrains Mono
   features: 
+    - content.action.edit
+    - content.action.view
+    - content.code.copy
+    - content.code.annotate
+    - content.footnote.tooltips
+    - header.autohide
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - navigation.tracking
+    - navigation.prune
+    - search.share
 
 markdown_extensions:
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.arithmatex:
       generic: true
   - admonition # 注解
@@ -55,7 +82,12 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.snippets
   - pymdownx.magiclink
-  - pymdownx.superfences
+  - pymdownx.superfences:
+        # make exceptions to highlighting of code:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
   - pymdownx.inlinehilite
   - pymdownx.tabbed:
       alternate_style: true 
@@ -63,12 +95,27 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.highlight:
       anchor_linenums: true
+  - toc:
+      permalink: ⚓︎
+      title: index
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}}
 
 extra_javascript:
-  - javascripts/mathjax.js
+  - 'style/javascripts/mathjax.js'
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
-  - 'css/img.css'
+  - 'style/css/img.css'
+  - 'style/css/code.css'
+  - 'style/css/table.css'
+  - 'style/css/fonts.css'
+  - 'style/css/mermaid.css'
 plugins:
   - search
+  - mermaid2
+
+
+
+language:
+  - 'zh'
+  - 'en'
