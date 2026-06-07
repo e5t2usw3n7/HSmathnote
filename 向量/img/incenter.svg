@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 260" width="310" height="260">
+  <style>
+    text { font-family: "Times New Roman", serif; font-size: 15px; font-style: italic; }
+    .lbl { font-size: 13px; font-style: italic; }
+    .tri { stroke: #333; stroke-width: 1.6; fill: none; }
+    .bis { stroke: #0070c0; stroke-width: 1.2; fill: none; stroke-dasharray: 6,3; }
+    .icirc { stroke: #c60; stroke-width: 1; fill: rgba(255,200,100,0.1); }
+    .dot { fill: #333; }
+    .idot { fill: #c60; }
+    .tang { fill: #999; }
+    .rad { stroke: #c60; stroke-width: 0.8; fill: none; stroke-dasharray: 3,2; }
+  </style>
+
+  <!-- Incenter I(152.2,139), r=61 -->
+  <circle cx="152" cy="139" r="61" class="icirc"/>
+
+  <!-- Triangle ABC: A(150,30) B(270,200) C(40,200) -->
+  <polygon points="150,30 270,200 40,200" class="tri"/>
+  <circle cx="150" cy="30" r="3" class="dot"/>
+  <text x="146" y="20" class="lbl">A</text>
+  <circle cx="270" cy="200" r="3" class="dot"/>
+  <text x="276" y="200" class="lbl">B</text>
+  <circle cx="40" cy="200" r="3" class="dot"/>
+  <text x="22" y="200" class="lbl">C</text>
+
+  <!-- Angle bisectors -->
+  <!-- A(150,30) -> I(152.2,139) -> foot on BC(153.43,200) -->
+  <line x1="150" y1="30" x2="153" y2="200" class="bis"/>
+  <!-- B(270,200) -> I(152.2,139) -> foot on AC(97.75,110.75) -->
+  <line x1="270" y1="200" x2="98" y2="111" class="bis"/>
+  <!-- C(40,200) -> I(152.2,139) -> foot on AB(206.18,109.59) -->
+  <line x1="40" y1="200" x2="206" y2="110" class="bis"/>
+
+  <!-- Tangent points (perpendicular feet from I to sides) -->
+  <!-- D on BC: (152.2, 200) -->
+  <circle cx="152" cy="200" r="2.5" class="tang"/>
+  <text x="158" y="214" class="lbl">D</text>
+  <!-- E on AC: (100.95, 105.80) -->
+  <circle cx="101" cy="106" r="2.5" class="tang"/>
+  <text x="83" y="103" class="lbl">E</text>
+  <!-- F on AB: (202.07, 103.76) -->
+  <circle cx="202" cy="104" r="2.5" class="tang"/>
+  <text x="212" y="101" class="lbl">F</text>
+
+  <!-- Radii to tangent points -->
+  <line x1="152" y1="139" x2="152" y2="200" class="rad"/>
+  <line x1="152" y1="139" x2="101" y2="106" class="rad"/>
+  <line x1="152" y1="139" x2="202" y2="104" class="rad"/>
+
+  <!-- Incenter I -->
+  <circle cx="152" cy="139" r="4.5" class="idot"/>
+  <text x="160" y="136" fill="#c60" font-weight="bold" font-size="14">I</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 240" width="310" height="240">
+  <style>
+    text { font-family: "Times New Roman", serif; font-size: 15px; font-style: italic; }
+    .lbl { font-size: 13px; font-style: italic; }
+    .tri { stroke: #333; stroke-width: 1.6; fill: none; }
+    .alt { stroke: #0070c0; stroke-width: 1.2; fill: none; stroke-dasharray: 6,3; }
+    .dot { fill: #333; }
+    .hdot { fill: #c00; }
+    .fdot { fill: #666; }
+    .sq { stroke: #999; stroke-width: 0.8; fill: none; }
+  </style>
+
+  <!-- Triangle ABC: A(150,30) B(270,200) C(40,200) -->
+  <polygon points="150,30 270,200 40,200" class="tri"/>
+  <circle cx="150" cy="30" r="3" class="dot"/>
+  <text x="146" y="20" class="lbl">A</text>
+  <circle cx="270" cy="200" r="3" class="dot"/>
+  <text x="276" y="200" class="lbl">B</text>
+  <circle cx="40" cy="200" r="3" class="dot"/>
+  <text x="22" y="200" class="lbl">C</text>
+
+  <!-- Altitude lines (extended) -->
+  <!-- AD: (150,20)->(150,210) -->
+  <line x1="150" y1="20" x2="150" y2="210" class="alt"/>
+  <!-- BE: (278.4,205.4)->(99.5,89.7) -->
+  <line x1="278" y1="205" x2="100" y2="90" class="alt"/>
+  <!-- CF: (31.8,205.8)->(201.7,85.9) -->
+  <line x1="32" y1="206" x2="202" y2="86" class="alt"/>
+
+  <!-- Feet of altitudes -->
+  <!-- D(150,200) -->
+  <circle cx="150" cy="200" r="2.5" class="fdot"/>
+  <text x="155" y="215" class="lbl">D</text>
+  <!-- E(107.88,95.10) -->
+  <circle cx="108" cy="95" r="2.5" class="fdot"/>
+  <text x="88" y="92" class="lbl">E</text>
+  <!-- F(193.51,91.64) -->
+  <circle cx="194" cy="92" r="2.5" class="fdot"/>
+  <text x="202" y="89" class="lbl">F</text>
+
+  <!-- Orthocenter H(150,122.35) -->
+  <circle cx="150" cy="122" r="4.5" class="hdot"/>
+  <text x="158" y="119" fill="#c00" font-weight="bold" font-size="14">H</text>
+
+  <!-- Right angle mark at D -->
+  <polyline points="144,196 150,200 144,204" class="sq"/>
+</svg>
