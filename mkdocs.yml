@@ -28,6 +28,9 @@ nav:
   - 导数:
     - "待办": "导数/no.md"
 
+  - 向量:
+    - "向量与三角形": "向量/Lecture1.md"
+
 copyright: Copyright 2024 by e5t2usw3n7
 
 theme:

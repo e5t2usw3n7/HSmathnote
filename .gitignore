@@ -1,0 +1,12 @@
+# CLAUDE.md
+CLAUDE.md
+
+数学笔记.pdf
+
+# Build artifacts
+site/
+
+# Local dependencies
+node_modules/
+package.json
+package-lock.json

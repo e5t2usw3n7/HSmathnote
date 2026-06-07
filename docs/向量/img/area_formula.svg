@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 260" width="300" height="260">
+  <style>
+    text { font-family: "Times New Roman", serif; font-size: 16px; font-style: italic; }
+    .label { font-size: 14px; }
+    .vec { stroke: #333; stroke-width: 1.5; fill: none; marker-end: url(#arrow); }
+    .tri { stroke: #999; stroke-width: 1; fill: none; stroke-dasharray: 4,3; }
+    .dot { fill: #333; }
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#333"/>
+    </marker>
+  </defs>
+  <!-- Origin -->
+  <circle cx="40" cy="220" r="3" class="dot"/>
+  <text x="25" y="238" class="label">O</text>
+  <!-- Triangle ABC -->
+  <polygon points="150,40 260,180 100,180" class="tri"/>
+  <circle cx="150" cy="40" r="3" class="dot"/>
+  <text x="145" y="30" class="label">A</text>
+  <circle cx="260" cy="180" r="3" class="dot"/>
+  <text x="268" y="185" class="label">B</text>
+  <circle cx="100" cy="180" r="3" class="dot"/>
+  <text x="82" y="185" class="label">C</text>
+  <!-- Vectors OA, OB -->
+  <line x1="40" y1="220" x2="148" y2="44" class="vec"/>
+  <line x1="40" y1="220" x2="257" y2="183" class="vec"/>
+  <!-- Vector labels -->
+  <text x="75" y="125" class="label">OA</text>
+  <path d="M75,121 L100,113" stroke="#333" stroke-width="1" fill="none" marker-end="url(#arrow)"/>
+  <text x="165" y="208" class="label">OB</text>
+  <path d="M165,204 L195,196" stroke="#333" stroke-width="1" fill="none" marker-end="url(#arrow)"/>
+</svg>

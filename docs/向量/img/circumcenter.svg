@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 260" width="310" height="260">
+  <style>
+    text { font-family: "Times New Roman", serif; font-size: 15px; font-style: italic; }
+    .lbl { font-size: 13px; font-style: italic; }
+    .tri { stroke: #333; stroke-width: 1.6; fill: none; }
+    .bis { stroke: #0070c0; stroke-width: 1.2; fill: none; stroke-dasharray: 6,3; }
+    .circ { stroke: #999; stroke-width: 1; fill: none; stroke-dasharray: 3,2; }
+    .dot { fill: #333; }
+    .odot { fill: #00c; }
+    .mdot { fill: #666; }
+    .sq { stroke: #999; stroke-width: 0.8; fill: none; }
+  </style>
+
+  <!-- Circumcircle: O(155,153.82), R=123.9 -->
+  <circle cx="155" cy="154" r="124" class="circ"/>
+
+  <!-- Triangle ABC: A(150,30) B(270,200) C(40,200) -->
+  <polygon points="150,30 270,200 40,200" class="tri"/>
+  <circle cx="150" cy="30" r="3" class="dot"/>
+  <text x="146" y="20" class="lbl">A</text>
+  <circle cx="270" cy="200" r="3" class="dot"/>
+  <text x="276" y="200" class="lbl">B</text>
+  <circle cx="40" cy="200" r="3" class="dot"/>
+  <text x="22" y="200" class="lbl">C</text>
+
+  <!-- Perpendicular bisectors (extended) -->
+  <!-- bis AB: through (210,115), dir(-170,120) -> (302,49) to (118,181) -->
+  <line x1="302" y1="49" x2="118" y2="181" class="bis"/>
+  <!-- bis AC: through (95,115), dir(170,110) -> (8,69) to (155,154) -->
+  <line x1="8" y1="69" x2="155" y2="154" class="bis"/>
+  <!-- bis BC: vertical x=155, from (155,88) to (155,200) -->
+  <line x1="155" y1="88" x2="155" y2="200" class="bis"/>
+
+  <!-- Midpoints -->
+  <!-- M1 mid AB = (210, 115) -->
+  <circle cx="210" cy="115" r="2.5" class="mdot"/>
+  <text x="217" y="112" class="lbl">M<tspan font-size="10" dy="2">1</tspan></text>
+  <!-- M2 mid AC = (95, 115) -->
+  <circle cx="95" cy="115" r="2.5" class="mdot"/>
+  <text x="75" y="112" class="lbl">M<tspan font-size="10" dy="2">2</tspan></text>
+  <!-- M3 mid BC = (155, 200) -->
+  <circle cx="155" cy="200" r="2.5" class="mdot"/>
+  <text x="161" y="214" class="lbl">M<tspan font-size="10" dy="2">3</tspan></text>
+
+  <!-- Right angle marks at midpoints -->
+  <polyline points="206,111 210,115 214,111" class="sq"/>
+  <polyline points="91,111 95,115 99,111" class="sq"/>
+
+  <!-- Circumcenter O(155, 153.82) -->
+  <circle cx="155" cy="154" r="4.5" class="odot"/>
+  <text x="163" y="151" fill="#00c" font-weight="bold" font-size="14">O</text>
+</svg>

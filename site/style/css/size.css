@@ -1,4 +1,0 @@
-/* 调整页面（包括左中右三栏）最大宽度 */
-.md-container {
-    max-width: 120rem !important;  /* 覆盖默认的 61rem 限制 */
-}

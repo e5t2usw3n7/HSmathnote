@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 240" width="280" height="240">
+  <style>
+    text { font-family: "Times New Roman", serif; font-size: 16px; font-style: italic; }
+    .label { font-size: 14px; }
+    .tri { stroke: #333; stroke-width: 1.5; fill: none; }
+    .median { stroke: #666; stroke-width: 1; fill: none; stroke-dasharray: 5,3; }
+    .dot { fill: #333; }
+    .center { fill: #c00; }
+  </style>
+  <!-- Triangle ABC -->
+  <polygon points="140,30 250,200 50,200" class="tri"/>
+  <circle cx="140" cy="30" r="3" class="dot"/>
+  <text x="135" y="20" class="label">A</text>
+  <circle cx="250" cy="200" r="3" class="dot"/>
+  <text x="258" y="205" class="label">B</text>
+  <circle cx="50" cy="200" r="3" class="dot"/>
+  <text x="32" y="205" class="label">C</text>
+  <!-- Midpoints -->
+  <circle cx="150" cy="200" r="2" class="dot"/>
+  <text x="147" y="218" class="label">E</text>
+  <circle cx="95" cy="115" r="2" class="dot"/>
+  <text x="75" y="112" class="label">F</text>
+  <circle cx="195" cy="115" r="2" class="dot"/>
+  <text x="205" y="112" class="label">D</text>
+  <!-- Medians -->
+  <line x1="140" y1="30" x2="150" y2="200" class="median"/>
+  <line x1="250" y1="200" x2="95" y2="115" class="median"/>
+  <line x1="50" y1="200" x2="195" y2="115" class="median"/>
+  <!-- Centroid G -->
+  <circle cx="147" cy="143" r="4" class="center"/>
+  <text x="155" y="140" fill="#c00" font-weight="bold" font-size="15">G</text>
+</svg>
