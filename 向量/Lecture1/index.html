@@ -511,13 +511,16 @@ G\left(\frac{x_1 + x_2 + x_3}{3}, \frac{y_1 + y_2 + y_3}{3}\right)
 S_{\triangle ABG} = S_{\triangle BGC} = S_{\triangle AGC}
 \]</div>
 <p>④ ★ <span class="arithmatex">\(G\)</span> 点满足 <span class="arithmatex">\(GA^2 + GB^2 + GC^2\)</span> 最小（即当 <span class="arithmatex">\(G\)</span> 在平面内任一点处时，<span class="arithmatex">\(TA^2 + TB^2 + TC^2\)</span> 最小时，<span class="arithmatex">\(T\)</span> 即为重心）。</p>
-<p><strong>向量性质</strong>：</p>
+<p>奔驰定理：</p>
 <div class="arithmatex">\[
 \vec{GA} + \vec{GB} + \vec{GC} = \vec{0}  \tag{3}
 \]</div>
 <p>★ 若 <span class="arithmatex">\(\vec{AP} = \lambda \left(\frac{\vec{AB}}{|AB| \sin B} + \frac{\vec{AC}}{|AC| \sin C}\right)\)</span>，则 <span class="arithmatex">\(A\)</span>、<span class="arithmatex">\(P\)</span>、<span class="arithmatex">\(G\)</span> 三点共线。</p>
-<p><strong>例题</strong>：</p>
+<details class="example">
+<summary>例题</summary>
+<p><img alt="alt text" src="../image_424401243412634.png"/></p>
 <p>若 <span class="arithmatex">\(\vec{AB} = m\vec{AM}\)</span>，<span class="arithmatex">\(\vec{AC} = n\vec{AN}\)</span>，<span class="arithmatex">\(M\)</span>、<span class="arithmatex">\(N\)</span> 分别在 <span class="arithmatex">\(AB\)</span>、<span class="arithmatex">\(AC\)</span> 上，且 <span class="arithmatex">\(MN\)</span> 过 <span class="arithmatex">\(G\)</span> 点，则 <span class="arithmatex">\(m + n = 3\)</span>。</p>
+</details>
 <details class="tip">
 <summary>Tip</summary>
 <p>证明：设 <span class="arithmatex">\(A(x_1, y_1)\)</span>，<span class="arithmatex">\(B(x_2, y_2)\)</span>，<span class="arithmatex">\(C(x_3, y_3)\)</span>，则 <span class="arithmatex">\(G\left(\frac{x_1+x_2+x_3}{3}, \frac{y_1+y_2+y_3}{3}\right)\)</span>。</p>
@@ -532,8 +535,9 @@ S_{\triangle ABG} = S_{\triangle BGC} = S_{\triangle AGC}
 BH \cdot HE = CH \cdot HF = AH \cdot HD  \tag{4}
 \]</div>
 <p>（即交弦定理）</p>
+<p>③ 奔驰定理：</p>
 <p>★ 若 <span class="arithmatex">\(\tan A \cdot \overrightarrow{HA} = \tan B \cdot \overrightarrow{HB} = \tan C \cdot \overrightarrow{HC}\)</span>，则 <span class="arithmatex">\(H\)</span> 为垂心。</p>
-<p>③ 若 <span class="arithmatex">\(H\)</span> 为垂心，则：</p>
+<p>④ 若 <span class="arithmatex">\(H\)</span> 为垂心，则：</p>
 <div class="arithmatex">\[
 \overrightarrow{AH} = \lambda \left(\frac{\overrightarrow{AB}}{|AB| \cos B} + \frac{\overrightarrow{AC}}{|AC| \cos C}\right)  \tag{5}
 \]</div>
@@ -555,8 +559,7 @@ BH \cdot HE = CH \cdot HF = AH \cdot HD  \tag{4}
 <p><img alt="外心" src="../img/circumcenter.svg"/></p>
 <p><strong>性质</strong>：</p>
 <p>① <span class="arithmatex">\(\angle BOC = 2\angle BAC\)</span>（及另外两个同理）。</p>
-<p>② ★ 若 <span class="arithmatex">\(\sin 2A \cdot \overrightarrow{OA} + \sin 2B \cdot \overrightarrow{OB} + \sin 2C \cdot \overrightarrow{OC} = \vec{0}\)</span>（奔驰定理），则 <span class="arithmatex">\(O\)</span> 为外心。</p>
-<p>③ <span class="arithmatex">\(O\)</span>、<span class="arithmatex">\(G\)</span>、<span class="arithmatex">\(H\)</span>（外、重、重心）三点共线，且 <span class="arithmatex">\(HG = 2GO\)</span>（欧拉线）。</p>
+<p>② 奔驰定理：若 <span class="arithmatex">\(\sin 2A \cdot \overrightarrow{OA} + \sin 2B \cdot \overrightarrow{OB} + \sin 2C \cdot \overrightarrow{OC} = \vec{0}\)</span>（奔驰定理），则 <span class="arithmatex">\(O\)</span> 为外心。</p>
 <details class="tip">
 <summary>Tip</summary>
 <p>证明：由奔驰定理：</p>
@@ -568,20 +571,19 @@ S_{\triangle OBC} \cdot \overrightarrow{OA} + S_{\triangle OAC} \cdot \overright
 \]</div>
 <p><span class="arithmatex">\(\therefore\)</span> Q.E.D.</p>
 </details>
+<p>③ <span class="arithmatex">\(O\)</span>、<span class="arithmatex">\(G\)</span>、<span class="arithmatex">\(H\)</span>（外、重、重心）三点共线，且 <span class="arithmatex">\(HG = 2GO\)</span>（欧拉线）。</p>
 <p>④ 若 <span class="arithmatex">\(|\overrightarrow{OA}| = |\overrightarrow{OB}| = |\overrightarrow{OC}|\)</span>，则 <span class="arithmatex">\(O\)</span> 为外心。</p>
-<p>⑤ 若 <span class="arithmatex">\(\overrightarrow{OP} = \frac{\overrightarrow{OB} + \overrightarrow{OC}}{2} + \lambda \frac{\overrightarrow{AB}}{|AB| \cos B}\)</span>，则 <span class="arithmatex">\(P\)</span> 轨迹过外心。</p>
+<p>⑤ 若 <span class="arithmatex">\(\vec{OP} = \frac{\vec{OB} + \vec{OC}}{2} + \lambda \left( \frac{\vec{AB}}{|\vec{AB}| \cos B} + \frac{\vec{AC}}{|\vec{AC}| \cos C} \right)\)</span>，则 <span class="arithmatex">\(P\)</span> 轨迹过外心。</p>
 <h3 id="4-内心内角平分线交点">4. 内心（内角平分线交点）<a class="headerlink" href="#4-内心内角平分线交点" title="Permanent link">⚓︎</a></h3>
 <p><img alt="内心" src="../img/incenter.svg"/></p>
 <p><strong>性质</strong>：</p>
-<p>① 若 <span class="arithmatex">\(a \cdot \overrightarrow{IA} + b \cdot \overrightarrow{IB} + c \cdot \overrightarrow{IC} = \vec{0}\)</span>，则 <span class="arithmatex">\(I\)</span> 为内心（其中 <span class="arithmatex">\(a\)</span>、<span class="arithmatex">\(b\)</span>、<span class="arithmatex">\(c\)</span> 为对应边长）。</p>
+<p>① 奔驰定理：若 <span class="arithmatex">\(a \cdot \overrightarrow{IA} + b \cdot \overrightarrow{IB} + c \cdot \overrightarrow{IC} = \vec{0}\)</span>，则 <span class="arithmatex">\(I\)</span> 为内心（其中 <span class="arithmatex">\(a\)</span>、<span class="arithmatex">\(b\)</span>、<span class="arithmatex">\(c\)</span> 为对应边长）。</p>
 <p>② <span class="arithmatex">\(AD^2 = AB \cdot AC - BD \cdot DC\)</span>（斯特瓦尔特定理）。</p>
-<p>③ ★ <span class="arithmatex">\(\frac{1}{2}AB \cdot AD \cdot \sin \alpha + \frac{1}{2}AC \cdot AD \cdot \sin \beta = \frac{1}{2}AB \cdot AC \cdot \sin(\alpha + \beta)\)</span></p>
+<p>③ <span class="arithmatex">\(\Rightarrow \frac{\sin \alpha}{AC} + \frac{\sin \beta}{AB} = \frac{\sin(\alpha + \beta)}{AD} \quad \text{（张角定理）}\)</span></p>
 <details class="tip">
 <summary>Tip</summary>
 <p>证明：</p>
-<div class="arithmatex">\[
-\Rightarrow \frac{\sin \alpha}{AC} + \frac{\sin \beta}{AB} = \frac{\sin(\alpha + \beta)}{AD} \quad \text{（张角定理）}
-\]</div>
+<p><span class="arithmatex">\(\frac{1}{2}AB \cdot AD \cdot \sin \alpha + \frac{1}{2}AC \cdot AD \cdot \sin \beta = \frac{1}{2}AB \cdot AC \cdot \sin(\alpha + \beta)\)</span></p>
 </details>
 <p>④ 若 <span class="arithmatex">\(a = b\)</span>，则 <span class="arithmatex">\(\frac{1}{AC} + \frac{1}{AB} = \frac{2 \cos \frac{\alpha}{2}}{AD}\)</span>。</p>
 <p>⑤ <span class="arithmatex">\(r = \frac{2S}{C}\)</span>（内切圆半径 <span class="arithmatex">\(r\)</span> 与面积 <span class="arithmatex">\(S\)</span>、周长 <span class="arithmatex">\(C\)</span> 的关系）。</p>
